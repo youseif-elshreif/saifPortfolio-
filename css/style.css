@@ -555,7 +555,7 @@ section:not(:nth-of-type(1)) {
 
 @keyframes up2 {
   0% {
-    top: 80px;
+    top: 100px;
   }
   100% {
     top: 0;
