@@ -1,20 +1,27 @@
 import { list, bars, dragedList, navList } from "./events/navlist.js";
 import { darkBtn, darkMode } from "./events/dark.js";
-import { reachedsec } from "./events/scroll.js";
-import { AddAnimationToTextWhenTransformTranslate3dEqualNum } from "./home/home.js";
+import { reachedsec, reachedsec2, numbers } from "./events/scroll.js";
+import { animation } from "./home/home.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
+  let start = false;
   if (localStorage.getItem("mode") === "true") {
     if (darkBtn) darkBtn.classList.add("moon");
   }
   darkMode();
   navList();
-  AddAnimationToTextWhenTransformTranslate3dEqualNum();
+  animation();
   reachedsec("skills", "skills-list", 150, "reached");
-  reachedsec("protfolio", "protfolio-list", 200, "reached");
+  reachedsec("protfolio", "protfolio-list", 200, "reached-pro");
   let titles = document.querySelectorAll(".experience .title");
   for (let i = 1; i < titles.length; i++) {
     reachedsec(`e-${i}`, `t-${i}`, 500, "reached-p");
+  }
+  if (!start) {
+    numbers.forEach((number) => {
+      reachedsec2("my-stats", number, 100);
+    });
+    start = true;
   }
 });
 

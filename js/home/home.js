@@ -1,4 +1,4 @@
-export function AddAnimationToTextWhenTransformTranslate3dEqualNum() {
+export function animation() {
   let Plist = document.querySelectorAll(".protfolio-item");
   Plist.forEach((item) => {
     item.addEventListener("mouseover", (e) => {
