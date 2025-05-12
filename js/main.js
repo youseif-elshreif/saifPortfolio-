@@ -4,7 +4,6 @@ import { reachedsec, reachedsec2, numbers } from "./events/scroll.js";
 import { animation } from "./home/home.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
-  let start = false;
   if (localStorage.getItem("mode") === "true") {
     if (darkBtn) darkBtn.classList.add("moon");
   }
@@ -17,12 +16,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   for (let i = 1; i < titles.length; i++) {
     reachedsec(`e-${i}`, `t-${i}`, 500, "reached-p");
   }
-  if (!start) {
-    numbers.forEach((number) => {
-      reachedsec2("my-stats", number, 100);
-    });
-    start = true;
-  }
+  numbers.forEach((number) => {
+    reachedsec2("my-stats", number, 100);
+  });
 });
 
 document.addEventListener("click", (e) => {

@@ -36,14 +36,14 @@ export function reachedsec2(secClassName, e, h) {
 }
 
 function increaseNumderTo(target) {
+  start = true;
   const end = +target.dataset.count;
   let counter = setInterval(() => {
     target.innerText++;
     if (target.innerText == end) {
       clearInterval(counter);
     }
-    start = true;
-  }, 3000 / end);
+  }, 1000 / end);
 }
 
 function addClassToElement(e, className) {
