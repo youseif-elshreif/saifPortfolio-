@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   navList();
   animation();
   reachedsec("skills", "skills-list", 150, "reached");
-  reachedsec("protfolio", "protfolio-list", 200, "reached-pro");
+  reachedsec("portfolio", "portfolio-list", 200, "reached-pro");
   let titles = document.querySelectorAll(".experience .title");
   for (let i = 1; i < titles.length; i++) {
     reachedsec(`e-${i}`, `t-${i}`, 500, "reached-p");

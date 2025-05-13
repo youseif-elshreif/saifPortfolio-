@@ -1,7 +1,7 @@
 export function animation() {
-  let Plist = document.querySelectorAll(".protfolio-item");
+  let Plist = document.querySelectorAll(".portfolio-item");
   Plist.forEach((item) => {
-    item.addEventListener("mouseover", (e) => {
+    item.addEventListener("mouseover", () => {
       let text = item.querySelector(".text");
       text.classList.add("animation-text");
 

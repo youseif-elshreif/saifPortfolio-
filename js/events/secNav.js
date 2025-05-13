@@ -1,0 +1,71 @@
+// Select all navigation items
+const secDiv = document.querySelectorAll(".pseudo-nav div");
+
+// Function to add active class to the selected element
+export function addActive(e, eS) {
+  eS.forEach((a) => {
+    a.classList.remove("active");
+  });
+  e.classList.add("active");
+}
+
+export function goToTargetSec(secName) {
+  let secTop = document.getElementById(secName).offsetTop;
+  window.scrollTo({
+    top: secTop - 50,
+    behavior: "smooth",
+  });
+}
+
+function activateNavItem(sectionName) {
+  secDiv.forEach((navItem) => {
+    navItem.classList.remove("active");
+    if (navItem.dataset.target.toLowerCase() === sectionName.toLowerCase()) {
+      navItem.classList.add("active");
+    }
+  });
+}
+
+secDiv.forEach((e) => {
+  e.addEventListener("click", () => {
+    addActive(e, secDiv);
+    goToTargetSec(e.dataset.target.toLowerCase());
+  });
+});
+
+window.addEventListener("scroll", () => {
+  const sections = [
+    "home",
+    "skills",
+    "portfolio",
+    "stats",
+    "experience",
+    "contact",
+  ];
+
+  let currentSection = "";
+
+  const isAtBottom =
+    window.innerHeight + window.scrollY >= document.body.offsetHeight - 50;
+
+  sections.forEach((sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const sectionTop = section.getBoundingClientRect().top;
+      const sectionBottom = section.getBoundingClientRect().bottom;
+
+      if (isAtBottom && sectionId === "contact") {
+        currentSection = sectionId;
+      } else if (
+        (sectionTop < window.innerHeight / 2 && sectionBottom > 0) ||
+        (sectionTop >= 0 && sectionTop < window.innerHeight / 2)
+      ) {
+        currentSection = sectionId;
+      }
+    }
+  });
+
+  if (currentSection) {
+    activateNavItem(currentSection);
+  }
+});

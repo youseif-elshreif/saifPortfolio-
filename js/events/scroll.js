@@ -2,7 +2,7 @@ export let start = false;
 export let numbers = document.querySelectorAll(".stats-item .counter span");
 window.addEventListener("scroll", () => {
   reachedsec("skills", "skills-list", 150, "reached");
-  reachedsec("protfolio", "protfolio-list", 200, "reached-pro");
+  reachedsec("portfolio", "portfolio-list", 200, "reached-pro");
   let titles = document.querySelectorAll(".experience .title");
   for (let i = 0; i < titles.length; i++) {
     reachedsec(`e-${i}`, `t-${i}`, 40, "reached-p");
@@ -49,6 +49,3 @@ function increaseNumderTo(target) {
 function addClassToElement(e, className) {
   e.classList.add(className);
 }
-// const element = document.querySelector(".main-contact");
-// const distanceFromPageTop = element.offsetTop + window.scrollY;
-// console.log(distanceFromPageTop);
