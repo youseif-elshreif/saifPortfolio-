@@ -1,0 +1,93 @@
+.my-stats .stats-list {
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+.stats-item:hover {
+  box-shadow: var(--standard-shadow);
+}
+
+.stats-item .counter {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  top: 15px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+}
+
+.stats-item:hover .counter {
+  top: -27px;
+  font-size: 50px;
+  font-weight: 900;
+  text-shadow: 0 0 10px rgba(var(--h1-color), 0.3),
+    0 0 10px rgba(var(--h1-color), 0.1);
+}
+
+.stats-item .counter::before,
+.stats-item .counter::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: rgb(var(--h1-color));
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  top: calc(50% - 6px);
+}
+
+.stats-item .counter::after {
+  right: -20px;
+}
+
+.stats-item .counter::before {
+  left: -20px;
+}
+
+.stats-item .counter::before,
+.stats-item .counter::after {
+  box-shadow: var(--standard-shadow);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.stats-item:hover .counter::before,
+.stats-item:hover .counter::after {
+  box-shadow: none;
+  width: 85%;
+  height: 100%;
+  background-color: rgb(var(--bg-color));
+  top: 0;
+  border: 2px solid rgb(var(--h1-color));
+}
+
+.stats-item:hover .counter::before {
+  border-right: 0;
+  left: -9px;
+  border-radius: 10px 0 0 10px;
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  -ms-border-radius: 10px 0 0 10px;
+  -o-border-radius: 10px 0 0 10px;
+}
+.stats-item:hover .counter::after {
+  border-left: 0;
+  right: -9px;
+  border-radius: 0 10px 10px 0;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  -ms-border-radius: 0 10px 10px 0;
+  -o-border-radius: 0 10px 10px 0;
+}

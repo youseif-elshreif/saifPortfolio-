@@ -1,12 +1,13 @@
-export function animation() {
-  let Plist = document.querySelectorAll(".portfolio-item");
-  Plist.forEach((item) => {
-    item.addEventListener("mouseover", () => {
-      let text = item.querySelector(".text");
-      text.classList.add("animation-text");
+import { reachedsec, reachedsec2, numbers } from "./homeScroll.js";
 
-      let a = item.querySelector("a");
-      a.classList.add("animation-a");
-    });
+document.addEventListener("DOMContentLoaded", async () => {
+  reachedsec("skills", "skills-list", 150, "reached");
+  reachedsec("portfolio", "portfolio-list", 200, "reached-pro");
+  let titles = document.querySelectorAll(".experience .title");
+  for (let i = 1; i < titles.length; i++) {
+    reachedsec(`e-${i}`, `t-${i}`, 500, "reached-p");
+  }
+  numbers.forEach((number) => {
+    reachedsec2("my-stats", number, 100);
   });
-}
+});

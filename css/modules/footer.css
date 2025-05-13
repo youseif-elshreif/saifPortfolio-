@@ -1,0 +1,24 @@
+/* start-footer */
+footer {
+  padding-bottom: 20px;
+  background-color: rgb(var(--bg-color));
+}
+footer .header {
+  font-size: 20px;
+  top: -11.9px;
+  margin-bottom: 10px;
+}
+footer .header i {
+  margin-left: 8px;
+}
+
+footer span {
+  color: rgb(var(--h1-color));
+  font-family: var(--Roboto-font);
+  position: relative;
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+}
+/* end-footer */

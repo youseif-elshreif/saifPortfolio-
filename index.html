@@ -13,6 +13,7 @@
     <!-- style -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/normaliz.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- dark-mode -->
@@ -23,60 +24,94 @@
     </script>
   </head>
   <body>
-    <div class="pseudo-nav">
-      <div class="sec active" data-target="Home">
+    <div class="pseudo-nav d-flex flex-column justify-center align-center">
+      <div
+        class="sec pos-relative d-flex justify-center align-center w-100 mb-15 mt-15 active"
+        data-target="Home"
+      >
         <span></span>
-        <span>Home</span>
+        <span class="pos-absolute">Home</span>
       </div>
-      <div class="sec" data-target="Skills">
+      <div
+        class="sec pos-relative d-flex justify-center align-center w-100 mb-15 mt-15"
+        data-target="Skills"
+      >
         <span></span>
-        <span>Skills</span>
+        <span class="pos-absolute">Skills</span>
       </div>
-      <div class="sec" data-target="portfolio">
+      <div
+        class="sec pos-relative d-flex justify-center align-center w-100 mb-15 mt-15"
+        data-target="portfolio"
+      >
         <span></span>
-        <span>Portfolio</span>
+        <span class="pos-absolute">Portfolio</span>
       </div>
-      <div class="sec" data-target="Stats">
+      <div
+        class="sec pos-relative d-flex justify-center align-center w-100 mb-15 mt-15"
+        data-target="Stats"
+      >
         <span></span>
-        <span>Stats</span>
+        <span class="pos-absolute">Stats</span>
       </div>
-      <div class="sec" data-target="Experience">
+      <div
+        class="sec pos-relative d-flex justify-center align-center w-100 mb-15 mt-15"
+        data-target="Experience"
+      >
         <span></span>
-        <span>Experience</span>
+        <span class="pos-absolute">Experience</span>
       </div>
-      <div class="sec" data-target="Contact">
+      <div
+        class="sec pos-relative d-flex justify-center align-center w-100 mb-15 mt-15"
+        data-target="Contact"
+      >
         <span></span>
-        <span>Contact</span>
+        <span class="pos-absolute">Contact</span>
       </div>
     </div>
     <div class="g">
-      <div class="nav">
-        <div class="container">
-          <div class="logo">
+      <div class="nav pos-absolute w-100">
+        <div class="container p-40 pos-relative d-flex justify-between">
+          <div class="logo d-flex align-center">
             <a href="" data-translat="logo">
-              <h1>Abdelrahman Saif</h1>
+              <h1 class="m-0">Abdelrahman Saif</h1>
             </a>
           </div>
-          <div class="drop-list">
-            <i class="fa-solid fa-circle-half-stroke dark"></i>
+          <div class="drop-list d-flex align-center">
+            <div class="day-night-toggle dark">
+              <div class="toggle-icon pos-relative d-flex">
+                <span class="moon-body pos-relative"></span>
+                <span class="sun-rays pos-absolute w-100 h-100">
+                  <span class="ray pos-absolute"></span>
+                  <span class="ray pos-absolute"></span>
+                  <span class="ray pos-absolute"></span>
+                  <span class="ray pos-absolute"></span>
+                  <span class="ray pos-absolute"></span>
+                  <span class="ray pos-absolute"></span>
+                  <span class="ray pos-absolute"></span>
+                  <span class="ray pos-absolute"></span>
+                </span>
+              </div>
+            </div>
             <div class="list">
               <span></span>
               <span></span>
               <span></span>
             </div>
-            <ul class="draged">
-              <li class="active">
+            <ul class="draged d-flex">
+              <li class="m-0 w-100 active">
                 <a href="home" data-translat="home"><span>Home</span></a>
               </li>
-              <li>
-                <a href="#skills" data-translat="skills"><span>Skills</span></a>
+              <li class="m-0 w-100">
+                <a href="designs.html" data-translat="Designs"
+                  ><span>Designs</span></a
+                >
               </li>
-              <li>
+              <li class="m-0 w-100">
                 <a href="#portfolio" data-translat="portfolio"
                   ><span>Portfolio</span></a
                 >
               </li>
-              <li>
+              <li class="m-0 w-100">
                 <a href="#about" data-translat="about"><span>About</span></a>
               </li>
             </ul>
@@ -84,32 +119,51 @@
         </div>
       </div>
 
-      <section id="home" class="curved home">
-        <div class="container">
-          <div class="home-cont">
+      <section id="home" class="curved home pos-relative">
+        <div
+          class="container p-40 pos-relative d-flex justify-center flex-column"
+        >
+          <div class="home-cont d-flex align-center">
             <div class="text">
-              <div>
-                <span class="hello" data-translat="hello"
+              <div class="pos-relative">
+                <span
+                  class="hello font-18 font-roboto text-body"
+                  data-translat="hello"
                   >Hello! My name is</span
                 >
-                <h2 data-translat="logo">Abdelrahman Saif</h2>
-                <h3 data-translat="description">Social Media Specialist</h3>
-                <p data-translat="description2">
+                <h2
+                  class="font-heading text-primary mb-20"
+                  data-translat="logo"
+                >
+                  Abdelrahman Saif
+                </h2>
+                <h3
+                  class="font-heading mb-25 pos-relative d-flex"
+                  data-translat="description"
+                >
+                  Social Media Specialist
+                </h3>
+                <p
+                  class="font-16 line-height-1-8 mt-25 pos-relative w-90 font-roboto text-body"
+                  data-translat="description2"
+                >
                   Creative professional with expertise in digital marketing and
                   social media strategy. Transforming brands through engaging
                   content and innovative campaigns.
                 </p>
-                <div class="cta-buttons">
+                <div class="cta-buttons d-flex mt-30 flex-wrap">
                   <a href="#portfolio" class="primary-btn">View Portfolio</a>
                   <a href="#contact" class="secondary-btn">Contact Me</a>
                 </div>
               </div>
             </div>
-            <div class="pic">
-              <div class="pic1">
+            <div class="pic pos-relative mt-60 w-260 h-260">
+              <div class="pic1 pos-relative">
                 <img src="img/saif2.png" alt="Saif img" />
               </div>
-              <div class="pic2">
+              <div
+                class="pic2 pos-relative overflow-hidden w-260 h-260 rounded-full"
+              >
                 <img src="img/saif.png" alt="Saif img" />
               </div>
               <div class="floating-badges">
@@ -120,16 +174,26 @@
             </div>
           </div>
           <div class="more">
-            <a href="#skills" id="explore-skills-btn">
+            <a
+              href="#skills"
+              id="explore-skills-btn"
+              class="d-flex flex-column align-center font-roboto font-18 font-weight-500 text-body pos-relative"
+            >
               <span>Explore My Skills</span>
-              <i class="fas fa-angle-double-down"></i>
+              <i
+                class="fas fa-angle-double-down text-primary font-20 mt-10 pos-relative"
+              ></i>
             </a>
           </div>
         </div>
       </section>
       <div class="cont">
-        <div class="main-contact">
-          <span data-translat="contact">Contact us</span>
+        <div class="main-contact w-fit">
+          <span
+            data-translat="contact"
+            class="pos-relative text-primary font-roboto"
+            >Contact us</span
+          >
           <div class="links">
             <a href=""><i class="fa-brands fa-facebook-f"></i></a>
             <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
@@ -139,11 +203,22 @@
         </div>
       </div>
       <section id="skills" class="skills">
-        <div class="container">
-          <h2 class="header" data-translat="skills">Skills</h2>
+        <div class="container p-40 pos-relative">
+          <h2
+            class="header w-fitr text-body text-uppercase text-center pos-relative w-fit"
+            data-translat="skills"
+          >
+            Skills
+          </h2>
           <div class="skills-list">
-            <div class="skill">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+            <div
+              class="skill d-flex flex-column align-center justify-center font-poppins font-14 mb-20 text-body w-fit p-25 rounded bg-light"
+            >
+              <svg
+                class="mb-10"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+              >
                 <g fill="none">
                   <rect width="256" height="256" fill="#300" rx="60" />
                   <path
@@ -154,8 +229,14 @@
               </svg>
               <span>Illustrator</span>
             </div>
-            <div class="skill">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+            <div
+              class="skill d-flex flex-column align-center justify-center font-poppins font-14 mb-20 text-body w-fit p-25 rounded bg-light"
+            >
+              <svg
+                class="mb-10"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+              >
                 <g fill="none">
                   <rect width="256" height="256" fill="#300" rx="60" />
                   <path
@@ -166,8 +247,14 @@
               </svg>
               <span>Illustrator</span>
             </div>
-            <div class="skill">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+            <div
+              class="skill d-flex flex-column align-center justify-center font-poppins font-14 mb-20 text-body w-fit p-25 rounded bg-light"
+            >
+              <svg
+                class="mb-10"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+              >
                 <g fill="none">
                   <rect width="256" height="256" fill="#300" rx="60" />
                   <path
@@ -178,8 +265,14 @@
               </svg>
               <span>Illustrator</span>
             </div>
-            <div class="skill">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+            <div
+              class="skill d-flex flex-column align-center justify-center font-poppins font-14 mb-20 text-body w-fit p-25 rounded bg-light"
+            >
+              <svg
+                class="mb-10"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+              >
                 <g fill="none">
                   <rect width="256" height="256" fill="#300" rx="60" />
                   <path
@@ -190,8 +283,14 @@
               </svg>
               <span>Illustrator</span>
             </div>
-            <div class="skill">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+            <div
+              class="skill d-flex flex-column align-center justify-center font-poppins font-14 mb-20 text-body w-fit p-25 rounded bg-light"
+            >
+              <svg
+                class="mb-10"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+              >
                 <g fill="none">
                   <rect width="256" height="256" fill="#300" rx="60" />
                   <path
@@ -202,8 +301,14 @@
               </svg>
               <span>Illustrator</span>
             </div>
-            <div class="skill">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+            <div
+              class="skill d-flex flex-column align-center justify-center font-poppins font-14 mb-20 text-body w-fit p-25 rounded bg-light"
+            >
+              <svg
+                class="mb-10"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+              >
                 <g fill="none">
                   <rect width="256" height="256" fill="#300" rx="60" />
                   <path
@@ -214,8 +319,14 @@
               </svg>
               <span>Illustrator</span>
             </div>
-            <div class="skill">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+            <div
+              class="skill d-flex flex-column align-center justify-center font-poppins font-14 mb-20 text-body w-fit p-25 rounded bg-light"
+            >
+              <svg
+                class="mb-10"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+              >
                 <g fill="none">
                   <rect width="256" height="256" fill="#300" rx="60" />
                   <path
@@ -230,76 +341,73 @@
         </div>
       </section>
 
-      <section id="portfolio" class="portfolio">
-        <div class="container">
-          <h2 class="header" data-translat="portfolio">Portfolio</h2>
-          <div class="portfolio-list">
-            <div class="portfolio-item">
-              <a href="#">
+      <section id="portfolio" class="portfolio bg-light">
+        <div class="container p-40 pos-relative">
+          <h2
+            class="header w-fit text-body text-uppercase text-center pos-relative"
+            data-translat="portfolio"
+          >
+            Portfolio
+          </h2>
+          <div class="custom-list portfolio-list">
+            <div class="custom-item pos-relative">
+              <a href="#" class="pos-relative overflow-hidden d-flex rounded">
                 <img src="img/team-01.jpg" loading="lazy" alt="" />
-                <div class="text">
-                  <h3 data-translat="Title">Title</h3>
-                  <div class="more-pro">
+                <div
+                  class="text pos-absolute w-90 bg-lighter p-15 rounded font-poppins text-body"
+                >
+                  <h3 class="mb-15" data-translat="Title">Title</h3>
+                  <div
+                    class="more-pro d-flex align-center justify-between mt-10 font-weight-500"
+                  >
                     <p data-translat="see-more">Read More</p>
                     <i class="fas fa-long-arrow-alt-right"></i>
                   </div>
                 </div>
               </a>
             </div>
-            <div class="portfolio-item">
-              <a href="#">
+            <div class="custom-item pos-relative">
+              <a href="#" class="pos-relative overflow-hidden d-flex rounded">
                 <img src="img/team-01.jpg" loading="lazy" alt="" />
-                <div class="text">
-                  <h3 data-translat="Title">Title</h3>
-                  <div class="more-pro">
+                <div
+                  class="text pos-absolute w-90 bg-lighter p-15 rounded font-poppins text-body"
+                >
+                  <h3 class="mb-15" data-translat="Title">Title</h3>
+                  <div
+                    class="more-pro d-flex align-center justify-between mt-10 font-weight-500"
+                  >
                     <p data-translat="see-more">Read More</p>
                     <i class="fas fa-long-arrow-alt-right"></i>
                   </div>
                 </div>
               </a>
             </div>
-            <div class="portfolio-item">
-              <a href="#">
+            <div class="custom-item pos-relative">
+              <a href="#" class="pos-relative overflow-hidden d-flex rounded">
                 <img src="img/team-01.jpg" loading="lazy" alt="" />
-                <div class="text">
-                  <h3 data-translat="Title">Title</h3>
-                  <div class="more-pro">
+                <div
+                  class="text pos-absolute w-90 bg-lighter p-15 rounded font-poppins text-body"
+                >
+                  <h3 class="mb-15" data-translat="Title">Title</h3>
+                  <div
+                    class="more-pro d-flex align-center justify-between mt-10 font-weight-500"
+                  >
                     <p data-translat="see-more">Read More</p>
                     <i class="fas fa-long-arrow-alt-right"></i>
                   </div>
                 </div>
               </a>
             </div>
-            <div class="portfolio-item">
-              <a href="#">
+            <div class="custom-item pos-relative">
+              <a href="#" class="pos-relative overflow-hidden d-flex rounded">
                 <img src="img/team-01.jpg" loading="lazy" alt="" />
-                <div class="text">
-                  <h3 data-translat="Title">Title</h3>
-                  <div class="more-pro">
-                    <p data-translat="see-more">Read More</p>
-                    <i class="fas fa-long-arrow-alt-right"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="portfolio-item">
-              <a href="#">
-                <img src="img/team-01.jpg" loading="lazy" alt="" />
-                <div class="text">
-                  <h3 data-translat="Title">Title</h3>
-                  <div class="more-pro">
-                    <p data-translat="see-more">Read More</p>
-                    <i class="fas fa-long-arrow-alt-right"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="portfolio-item">
-              <a href="#">
-                <img src="img/team-01.jpg" loading="lazy" alt="" />
-                <div class="text">
-                  <h3 data-translat="Title">Title</h3>
-                  <div class="more-pro">
+                <div
+                  class="text pos-absolute w-90 bg-lighter p-15 rounded font-poppins text-body"
+                >
+                  <h3 class="mb-15" data-translat="Title">Title</h3>
+                  <div
+                    class="more-pro d-flex align-center justify-between mt-10 font-weight-500"
+                  >
                     <p data-translat="see-more">Read More</p>
                     <i class="fas fa-long-arrow-alt-right"></i>
                   </div>
@@ -311,40 +419,88 @@
       </section>
 
       <section class="my-stats" id="stats">
-        <div class="container">
-          <h2 class="header" data-translat="my-stats">My Stats</h2>
-          <div class="stats-list">
-            <div class="stats-item">
-              <div class="counter"><span data-count="500">0</span></div>
-              <span class="name" data-translat=""> Projects </span>
+        <div class="container p-40 pos-relative">
+          <h2
+            class="header w-fit text-body text-uppercase text-center pos-relative"
+            data-translat="my-stats"
+          >
+            My Stats
+          </h2>
+          <div class="stats-list d-flex flex-wrap">
+            <div
+              class="stats-item d-flex flex-column align-end justify-center font-poppins font-14 mb-20 w-fit p-85-25-20 bg-light rounded pos-relative"
+            >
+              <div
+                class="counter font-40 font-weight-700 text-primary pos-absolute"
+              >
+                <span class="pos-relative z-2" data-count="500">0</span>
+              </div>
+              <span
+                class="name font-16 font-weight-700 text-uppercase text-body"
+                data-translat=""
+              >
+                Projects
+              </span>
             </div>
-            <div class="stats-item">
-              <div class="counter"><span data-count="200">0</span></div>
-              <span class="name" data-translat=""> Projects </span>
+            <div
+              class="stats-item d-flex flex-column align-end justify-center font-poppins font-14 mb-20 w-fit p-85-25-20 bg-light rounded pos-relative"
+            >
+              <div
+                class="counter font-40 font-weight-700 text-primary pos-absolute"
+              >
+                <span class="pos-relative z-2" data-count="500">0</span>
+              </div>
+              <span
+                class="name font-16 font-weight-700 text-uppercase text-body"
+                data-translat=""
+              >
+                Projects
+              </span>
             </div>
-            <div class="stats-item">
-              <div class="counter"><span data-count="20">0</span></div>
-              <span class="name" data-translat=""> Projects </span>
+            <div
+              class="stats-item d-flex flex-column align-end justify-center font-poppins font-14 mb-20 w-fit p-85-25-20 bg-light rounded pos-relative"
+            >
+              <div
+                class="counter font-40 font-weight-700 text-primary pos-absolute"
+              >
+                <span class="pos-relative z-2" data-count="500">0</span>
+              </div>
+              <span
+                class="name font-16 font-weight-700 text-uppercase text-body"
+                data-translat=""
+              >
+                Projects
+              </span>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="experience" class="experience">
-        <div class="container">
-          <h2 class="header" data-translat="experience">Experience</h2>
+      <section id="experience" class="experience bg-light">
+        <h2
+          class="header w-fit text-body text-uppercase text-center pos-relative"
+          data-translat="experience"
+        >
+          Experience
+        </h2>
+        <div class="container p-40 pos-relative">
           <div class="experience-list">
-            <div class="experience-item e-0">
+            <div
+              class="experience-item e-0 d-flex align-center justify-between mb-20 pos-relative"
+            >
               <div class="text">
                 <h3
                   style="--date: '2021'"
-                  class="title t-0"
+                  class="title t-0 font-roboto font-20 font-weight-700 text-uppercase mb-20 text-body pos-relative"
                   data-translat="Title"
                 >
                   Lorem, ipsum dolor.
                   <div></div>
                 </h3>
-                <p data-translat="description1">
+                <p
+                  class="font-poppins font-16 mb-5 line-height-1-8 pos-relative"
+                  data-translat="description1"
+                >
                   <span
                     >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Molestias dolorum repellat, quam facere ipsa natus odio
@@ -365,17 +521,22 @@
                 </p>
               </div>
             </div>
-            <div class="experience-item e-1">
+            <div
+              class="experience-item e-1 d-flex align-center justify-between mb-20 pos-relative"
+            >
               <div class="text">
                 <h3
                   style="--date: '2021'"
-                  class="title t-1"
+                  class="title t-1 font-roboto font-20 font-weight-700 text-uppercase mb-20 text-body pos-relative"
                   data-translat="Title"
                 >
                   Lorem, ipsum dolor.
                   <div></div>
                 </h3>
-                <p data-translat="description1">
+                <p
+                  class="font-poppins font-16 mb-5 line-height-1-8 pos-relative"
+                  data-translat="description1"
+                >
                   <span
                     >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Molestias dolorum repellat, quam facere ipsa natus odio
@@ -396,17 +557,22 @@
                 </p>
               </div>
             </div>
-            <div class="experience-item e-2">
+            <div
+              class="experience-item e-2 d-flex align-center justify-between mb-20 pos-relative"
+            >
               <div class="text">
                 <h3
                   style="--date: '2021'"
-                  class="title t-2"
+                  class="title t-2 font-roboto font-20 font-weight-700 text-uppercase mb-20 text-body pos-relative"
                   data-translat="Title"
                 >
                   Lorem, ipsum dolor.
                   <div></div>
                 </h3>
-                <p data-translat="description1">
+                <p
+                  class="font-poppins font-16 mb-5 line-height-1-8 pos-relative"
+                  data-translat="description1"
+                >
                   <span
                     >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Molestias dolorum repellat, quam facere ipsa natus odio
@@ -427,17 +593,58 @@
                 </p>
               </div>
             </div>
-            <div class="experience-item e-3">
+            <div
+              class="experience-item e-3 d-flex align-center justify-between mb-20 pos-relative"
+            >
               <div class="text">
                 <h3
                   style="--date: '2021'"
-                  class="title t-3"
+                  class="title t-3 font-roboto font-20 font-weight-700 text-uppercase mb-20 text-body pos-relative"
                   data-translat="Title"
                 >
                   Lorem, ipsum dolor.
                   <div></div>
                 </h3>
-                <p data-translat="description1">
+                <p
+                  class="font-poppins font-16 mb-5 line-height-1-8 pos-relative"
+                  data-translat="description1"
+                >
+                  <span
+                    >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Molestias dolorum repellat, quam facere ipsa natus odio
+                    facilis, voluptas eum maiores ab dignissimos tempora optio.
+                    Nesciunt pariatur quia quibusdam omnis sit magni quasi
+                    officiis commodi, magnam accusamus repellendus optio
+                    sapiente recusandae, blanditiis perspiciatis laudantium
+                    voluptas necessitatibus laborum sed error nulla aut suscipit
+                    debitis? Cum, dolore blanditiis dignissimos culpa facilis
+                    nam optio id aspernatur sint dolorum quibusdam asperiores at
+                    est! Optio, cupiditate perspiciatis ipsam recusandae eveniet
+                    voluptas exercitationem dolor unde facere impedit
+                    praesentium magni accusamus aperiam ratione laboriosam!
+                    Cupiditate, dolorum. Exercitationem, consectetur incidunt
+                    tempore deleniti countquam enim tenetur quidem non fuga
+                    alias?</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div
+              class="experience-item e-4 d-flex align-center justify-between mb-20 pos-relative"
+            >
+              <div class="text">
+                <h3
+                  style="--date: '2021'"
+                  class="title t-4 font-roboto font-20 font-weight-700 text-uppercase mb-20 text-body pos-relative"
+                  data-translat="Title"
+                >
+                  Lorem, ipsum dolor.
+                  <div></div>
+                </h3>
+                <p
+                  class="font-poppins font-16 mb-5 line-height-1-8 pos-relative"
+                  data-translat="description1"
+                >
                   <span
                     >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Molestias dolorum repellat, quam facere ipsa natus odio
@@ -463,44 +670,60 @@
       </section>
     </div>
     <section id="contact" class="contact">
-      <div class="container">
-        <h2 class="header" data-translat="contact">Contact</h2>
+      <div class="container p-40 pos-relative">
+        <h2
+          class="header w-fit text-body text-uppercase text-center pos-relative"
+          data-translat="contact"
+        >
+          Contact
+        </h2>
         <div class="contact-list">
-          <div class="contact-item">
-            <i class="fa-regular fa-envelope"></i>
-            <p>exampel@gmail.com</p>
+          <div
+            class="contact-item pos-relative standard-shadow bg-light p-15 mb-20 d-flex justify-between"
+          >
+            <i class="fa-regular fa-envelope text-body font-20"></i>
+            <p class="text-primary font-poppins">exampel@gmail.com</p>
           </div>
-          <div class="contact-item">
-            <i class="fa-solid fa-phone"></i>
-            <p>+20120000000</p>
+          <div
+            class="contact-item pos-relative standard-shadow bg-light p-15 mb-20 d-flex justify-between"
+          >
+            <i class="fa-regular fa-envelope text-body font-20"></i>
+            <p class="text-primary font-poppins">exampel@gmail.com</p>
           </div>
-          <div class="contact-item">
-            <i class="fa-solid fa-location-dot"></i>
-            <p data-translat="address">Ismailia, Egypt</p>
+          <div
+            class="contact-item pos-relative standard-shadow bg-light p-15 mb-20 d-flex justify-between"
+          >
+            <i class="fa-regular fa-envelope text-body font-20"></i>
+            <p class="text-primary font-poppins">exampel@gmail.com</p>
           </div>
         </div>
       </div>
     </section>
 
-    <footer>
-      <div class="container">
-        <h2 class="header" data-translat="contact">
+    <footer class="bg-light">
+      <div class="container p-40 pos-relative">
+        <h2
+          class="header w-fit text-body text-uppercase text-center pos-relative"
+          data-translat="contact"
+        >
           <a href=""><i class="fa-brands fa-facebook-f"></i></a>
           <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
           <a href=""><i class="fa-brands fa-behance"></i></a>
           <a href=""><i class="fa-brands fa-whatsapp"></i></a>
         </h2>
-        <span data-translat="foot"
+        <span
+          class="text-primary font-roboto pos-relative text-center d-block font-20 font-weight-700"
+          data-translat="foot"
           >"Want the world to know your work? Leave it to me"</span
         >
       </div>
     </footer>
     <script type="module" src="js/events/navlist.js"></script>
     <script type="module" src="js/events/dark.js"></script>
-    <script type="module" src="js/events/scroll.js"></script>
     <script type="module" src="js/events/secNav.js"></script>
     <script type="module" src="js/events/exploreSkills.js"></script>
     <script type="module" src="js/home/home.js"></script>
+    <script type="module" src="js/home/homeScroll.js"></script>
     <script type="module" src="js/main.js"></script>
   </body>
 </html>

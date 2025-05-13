@@ -1,0 +1,48 @@
+/* start-global-roles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all var(--trans-time) !important;
+  -webkit-transition: all var(--trans-time) !important;
+  -moz-transition: all var(--trans-time) !important;
+  -ms-transition: all var(--trans-time) !important;
+  -o-transition: all var(--trans-time) !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: rgb(var(--bg2-color));
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: inherit;
+}
+
+div section:not(:nth-of-type(1)),
+.contact {
+  padding: 0 0 var(--section-spacing);
+}
+
+::selection {
+  background: rgb(var(--h1-color));
+  color: rgb(var(--bg-color));
+}
+
+img::selection {
+  background: transparent;
+}
+/* end-global-roles */

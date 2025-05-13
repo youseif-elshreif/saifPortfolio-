@@ -1,4 +1,4 @@
-export let darkBtn = document.querySelector(".dark");
+export let darkBtn = document.querySelector(".day-night-toggle");
 export function darkMode() {
   darkBtn.addEventListener("click", () => {
     document.documentElement.classList.toggle("dark-mode");

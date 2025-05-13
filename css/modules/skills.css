@@ -1,0 +1,35 @@
+/* start-skills */
+
+.skills {
+  padding: 50px 0 !important;
+}
+.skills .skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 110px);
+  gap: 0 40px;
+  justify-content: center;
+  top: 20px;
+  opacity: 0;
+}
+
+.skills .skill {
+  font-family: var(--Poppinsin-font);
+  font-size: 14px;
+  color: rgb(var(--p-color));
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+  background-color: rgb(var(--bg-color));
+}
+
+.skills .skill:hover {
+  background-color: rgba(var(--h1-color), 0.05);
+  box-shadow: var(--standard-shadow);
+}
+
+.skills .skill svg {
+  width: 50px;
+}
+/* end-skills */

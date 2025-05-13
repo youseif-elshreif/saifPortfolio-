@@ -34,14 +34,9 @@ secDiv.forEach((e) => {
 });
 
 window.addEventListener("scroll", () => {
-  const sections = [
-    "home",
-    "skills",
-    "portfolio",
-    "stats",
-    "experience",
-    "contact",
-  ];
+  const sections = [...document.getElementsByTagName("section")].map((e) => {
+    return e.id;
+  });
 
   let currentSection = "";
 
