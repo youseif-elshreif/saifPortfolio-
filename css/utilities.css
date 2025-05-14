@@ -221,6 +221,10 @@
   box-shadow: var(--hover-shadow);
 }
 
+.border-bottom-h1 {
+  border-bottom: 4px solid rgb(var(--h1-color));
+}
+
 /* Z-index */
 .z-1 {
   z-index: 1;

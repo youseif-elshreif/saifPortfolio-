@@ -382,7 +382,7 @@
     overflow: hidden;
   }
   .custom-item:hover .text {
-    top: 0;
+    top: auto;
   }
 
   /* Add subtle shine effect */

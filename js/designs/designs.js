@@ -198,6 +198,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
-
-// Export for potential use in other modules
-export {};

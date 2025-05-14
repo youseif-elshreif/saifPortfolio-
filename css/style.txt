@@ -1,0 +1,116 @@
+/* Import Module Stylesheets */
+@import "modules/base.css";
+@import "modules/components.css";
+@import "modules/navigation.css";
+@import "modules/home.css";
+@import "modules/skills.css";
+@import "modules/portfolio.css";
+@import "modules/stats.css";
+@import "modules/experience.css";
+@import "modules/contact.css";
+@import "modules/footer.css";
+@import "./right-lift-navs.css";
+/* Root Variables */
+:root {
+  /* Primary Colors */
+  --bg-color: 25, 25, 31; /* #19191f - deep charcoal */
+  --bg2-color: 35, 35, 45; /* #23232d - rich graphite */
+  --h1-color: 216, 180, 108; /* #d8b46c - champagne gold */
+  --p-color: 235, 235, 245; /* #ebebf5 - pearl white */
+
+  /* Accent Colors */
+  --accent-light: 245, 240, 225; /* #f5f0e1 - ivory cream */
+  --accent-dark: 52, 73, 94; /* #34495e - deep navy slate */
+  --accent-gold: 212, 175, 55; /* #d4af37 - premium gold */
+  --accent-emerald: 0, 148, 115; /* #009473 - rich emerald */
+  --accent-ruby: 171, 39, 79; /* #ab274f - deep ruby */
+  --accent-sapphire: 15, 82, 186; /* #0f52ba - royal blue */
+
+  /* Fonts */
+  --Roboto-font: "Roboto", sans-serif;
+  --Poppinsin-font: "Poppins", sans-serif;
+  --Heading-font: "Montserrat", sans-serif;
+
+  /* Effects */
+  --trans-time: 0.3s;
+  --standard-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.25),
+    0 5px 15px -5px rgba(0, 0, 0, 0.15);
+  --hover-shadow: 0 14px 40px -10px rgba(0, 0, 0, 0.35),
+    0 10px 20px -5px rgba(0, 0, 0, 0.25);
+  --gold-shadow: 0 10px 25px -8px rgba(212, 175, 55, 0.35);
+  --border-radius: 12px;
+  --text-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+
+  /* Spacing */
+  --section-spacing: 100px;
+  --content-spacing: 60px;
+  --element-spacing: 25px;
+}
+
+.dark-mode {
+  /* Light Theme for Dark Mode Toggle */
+  --bg-color: 245, 245, 247; /* #f5f5f7 - soft white */
+  --bg2-color: 235, 235, 240; /* #ebebf0 - light silver */
+  --h1-color: 52, 73, 94; /* #34495e - deep navy slate */
+  --p-color: 50, 50, 56; /* #323238 - charcoal */
+
+  /* Accent Colors */
+  --accent-light: 240, 240, 250; /* #f0f0fa - airy white */
+  --accent-dark: 35, 35, 45; /* #23232d - rich graphite */
+  --accent-gold: 185, 151, 91; /* #b9975b - subtle gold */
+  --accent-emerald: 0, 123, 95; /* #007b5f - forest emerald */
+  --accent-ruby: 145, 36, 72; /* #912448 - burgundy ruby */
+  --accent-sapphire: 22, 71, 130; /* #164782 - deep sapphire */
+}
+
+
+
+--------------
+/* Import Module Stylesheets */
+@import "modules/base.css";
+@import "modules/components.css";
+@import "modules/navigation.css";
+@import "modules/home.css";
+@import "modules/skills.css";
+@import "modules/portfolio.css";
+@import "modules/stats.css";
+@import "modules/experience.css";
+@import "modules/contact.css";
+@import "modules/footer.css";
+@import "./right-lift-navs.css";
+/* Root Variables */
+:root {
+  --bg-color: 248, 249, 252; /* #f8f9fc - crisp snow white */
+  --bg2-color: 238, 242, 247; /* #eef2f7 - pale blue-gray */
+  --h1-color: 42, 72, 117; /* #2a4875 - deep yale blue */
+  --p-color: 55, 65, 81; /* #374151 - oxford gray */
+  --accent-light: 232, 240, 254; /* #e8f0fe - frost blue */
+  --accent-dark: 30, 55, 90; /* #1e375a - midnight navy */
+  --accent-warm: 193, 146, 103; /* #c19267 - camel tan */
+  --accent-pop: 88, 80, 236; /* #5850ec - electric indigo */
+  --Roboto-font: "Roboto", sans-serif;
+  --Poppinsin-font: "Poppins", sans-serif;
+  --Heading-font: "Montserrat", sans-serif;
+  --trans-time: 0.3s;
+  --standard-shadow: 0 10px 25px -8px rgba(42, 72, 117, 0.12),
+    0 5px 15px -3px rgba(42, 72, 117, 0.07);
+  --hover-shadow: 0 14px 35px -8px rgba(42, 72, 117, 0.18),
+    0 10px 20px -3px rgba(42, 72, 117, 0.12);
+  --pop-shadow: 0 10px 25px -5px rgba(88, 80, 236, 0.25);
+  --border-radius: 12px;
+  --text-shadow: 0 2px 4px rgba(42, 72, 117, 0.1);
+  --section-spacing: 100px;
+  --content-spacing: 60px;
+  --element-spacing: 25px;
+}
+
+.dark-mode {
+  --bg-color: 21, 24, 34; /* #151822 - deep space blue */
+  --bg2-color: 29, 35, 48; /* #1d2330 - slate charcoal */
+  --h1-color: 107, 149, 214; /* #6b95d6 - steel blue */
+  --p-color: 226, 232, 240; /* #e2e8f0 - soft white */
+  --accent-light: 65, 82, 112; /* #415270 - dusty blue */
+  --accent-dark: 20, 24, 44; /* #14182c - midnight blue */
+  --accent-warm: 173, 135, 98; /* #ad8762 - muted copper */
+  --accent-pop: 119, 112, 240; /* #7770f0 - lavender purple */
+}

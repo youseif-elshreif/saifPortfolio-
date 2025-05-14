@@ -1,12 +1,13 @@
 import { list, bars, dragedList, navList } from "./events/navlist.js";
 import { darkBtn, darkMode } from "./events/dark.js";
-
+import { contactBtnEvent } from "./events/main-contact.js";
 document.addEventListener("DOMContentLoaded", async () => {
   if (localStorage.getItem("mode") === "true") {
     if (darkBtn) darkBtn.classList.add("moon");
   }
   darkMode();
   navList();
+  contactBtnEvent();
 });
 
 document.addEventListener("click", (e) => {
