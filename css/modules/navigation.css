@@ -252,7 +252,7 @@
 
 .nav ul li.active,
 .nav ul li:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(var(--h1-color) , 0.1);
 }
 .nav ul li.active a,
 .nav ul li:hover a {
