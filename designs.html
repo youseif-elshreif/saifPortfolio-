@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="css/normaliz.css" />
     <link rel="stylesheet" href="css/utilities.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/designs/designs.css" />
     <link rel="stylesheet" href="css/right-lift-navs.css" />
+    <link rel="stylesheet" href="css/designs/designs.css" />
 
     <!-- dark-mode -->
     <script>
@@ -51,21 +51,6 @@
             </a>
           </div>
           <div class="drop-list d-flex align-center">
-            <div class="day-night-toggle dark">
-              <div class="toggle-icon pos-relative d-flex">
-                <span class="moon-body pos-relative"></span>
-                <span class="sun-rays pos-absolute w-100 h-100">
-                  <span class="ray pos-absolute"></span>
-                  <span class="ray pos-absolute"></span>
-                  <span class="ray pos-absolute"></span>
-                  <span class="ray pos-absolute"></span>
-                  <span class="ray pos-absolute"></span>
-                  <span class="ray pos-absolute"></span>
-                  <span class="ray pos-absolute"></span>
-                  <span class="ray pos-absolute"></span>
-                </span>
-              </div>
-            </div>
             <div class="list">
               <span></span>
               <span></span>
@@ -91,6 +76,21 @@
                 >
               </li>
             </ul>
+            <div class="day-night-toggle dark">
+              <div class="toggle-icon pos-relative d-flex">
+                <span class="moon-body pos-relative"></span>
+                <span class="sun-rays pos-absolute w-100 h-100">
+                  <span class="ray pos-absolute"></span>
+                  <span class="ray pos-absolute"></span>
+                  <span class="ray pos-absolute"></span>
+                  <span class="ray pos-absolute"></span>
+                  <span class="ray pos-absolute"></span>
+                  <span class="ray pos-absolute"></span>
+                  <span class="ray pos-absolute"></span>
+                  <span class="ray pos-absolute"></span>
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -103,7 +103,7 @@
           >
             Graphic Designs
           </h2>
-          <div class="designs-filters d-flex justify-center mb-25">
+          <div class="filters d-flex justify-center mb-25">
             <button class="filter-btn active" data-filter="all">
               All Designs
             </button>
@@ -116,8 +116,8 @@
           <div class="designs-list custom-list reached-pro">
             <!-- Single Design -->
             <div
-              class="custom-item design-item pos-relative"
-              data-category="branding"
+              class="custom-item design-item filter-item pos-relative"
+              data-type="branding"
             >
               <div
                 class="design-card pos-relative d-flex rounded standard-shadow bg-light"
@@ -143,9 +143,9 @@
 
             <!-- Campaign with Multiple Designs -->
             <div
-              class="custom-item design-item pos-relative"
-              data-category="social"
-              data-type="campaign"
+              class="custom-item design-item filter-item pos-relative"
+              data-type="social"
+              data-category="campaign"
               data-campaign-images='["img/team-01.jpg", "img/team-01.jpg", "img/team-01.jpg"]'
               data-campaign-titles='["Social Media Post 1", "Social Media Post 2", "Social Media Post 3"]'
               data-campaign-desc='["Description for post 1", "Description for post 2", "Description for post 3"]'
@@ -177,8 +177,8 @@
 
             <!-- Single Design -->
             <div
-              class="custom-item design-item pos-relative"
-              data-category="print"
+              class="custom-item design-item filter-item pos-relative"
+              data-type="print"
             >
               <div
                 class="design-card pos-relative d-flex rounded standard-shadow bg-light"
@@ -200,8 +200,8 @@
 
             <!-- Single Design -->
             <div
-              class="custom-item design-item pos-relative"
-              data-category="branding"
+              class="custom-item design-item filter-item pos-relative"
+              data-type="branding"
             >
               <div
                 class="design-card pos-relative d-flex rounded standard-shadow bg-light"
@@ -223,9 +223,9 @@
 
             <!-- Campaign with Multiple Designs -->
             <div
-              class="custom-item design-item pos-relative"
-              data-category="social"
-              data-type="campaign"
+              class="custom-item design-item filter-item pos-relative"
+              data-type="social"
+              data-category="campaign"
               data-campaign-images='["img/team-01.jpg", "img/team-01.jpg"]'
               data-campaign-titles='["Product Launch Post 1", "Product Launch Post 2"]'
               data-campaign-desc='["Product launch announcement", "Product features showcase"]'
@@ -257,8 +257,8 @@
 
             <!-- Single Design -->
             <div
-              class="custom-item design-item pos-relative"
-              data-category="print"
+              class="custom-item design-item filter-item pos-relative"
+              data-type="print"
             >
               <div
                 class="design-card pos-relative d-flex rounded standard-shadow bg-light"
@@ -300,11 +300,11 @@
             >
               <h3
                 id="lightbox-title"
-                class="font-roboto font-20 font-weight-700 text-body mb-15"
+                class="lightbox-title font-roboto font-20 font-weight-700 text-body mb-15"
               ></h3>
               <p
                 id="lightbox-description"
-                class="font-poppins font-16 text-body line-height-1-8"
+                class="lightbox-description font-poppins font-16 text-body line-height-1-8"
               ></p>
             </div>
           </div>
@@ -396,6 +396,8 @@
     <script type="module" src="js/events/dark.js"></script>
     <script type="module" src="js/events/secNav.js"></script>
     <script type="module" src="js/main.js"></script>
-    <script type="module" src="js/designs/designs.js"></script>
+    <script type="module" src="js/events/filter.js"></script>
+    <script type="module" src="js/designs/displayPics.js"></script>
+    <!-- <script type="module" src="js/designs/designs.js"></script> -->
   </body>
 </html>

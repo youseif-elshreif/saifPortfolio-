@@ -129,6 +129,10 @@
   padding: 85px 25px 20px;
 }
 
+.pt-0 {
+  padding-top: 0;
+}
+
 /* Typography */
 .text-center {
   text-align: center;

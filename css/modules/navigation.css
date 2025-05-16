@@ -23,11 +23,11 @@
 
 /* Day/Night Toggle */
 .nav .dark {
-  margin-right: 10px;
+  border-left: 3px solid rgba(var(--h1-color), 0.3);
+  padding: 13px 15px;
 }
 
 .day-night-toggle {
-  margin-right: 15px;
   cursor: pointer;
   position: relative;
   transition: transform 0.3s ease;
@@ -197,7 +197,7 @@
   opacity: 1;
 }
 
-.moon {
+.moon .toggle-icon {
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -334,6 +334,21 @@
   .nav ul li a {
     border-left: 0;
     padding: 10px;
+  }
+
+  .nav .dark {
+    border-left: none;
+    padding: 0px 10px 0;
+  }
+}
+
+@media (max-width: 340px) {
+  .nav a h1 {
+    font-size: 20px;
+  }
+
+  .home .container h2 {
+    font-size: 34px !important;
   }
 }
 /* end-nav */

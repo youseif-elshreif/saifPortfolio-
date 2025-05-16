@@ -69,3 +69,28 @@
   transform-origin: right;
 }
 /*end-components */
+/* start-Filter */
+.filters {
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  border: 2px solid rgb(var(--h1-color));
+  background: transparent;
+  color: rgb(var(--h1-color));
+  border-radius: var(--border-radius);
+  font-family: var(--Poppinsin-font);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--trans-time) ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: rgb(var(--h1-color));
+  color: rgb(var(--bg-color));
+}
+/* end-Filter */

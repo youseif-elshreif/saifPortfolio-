@@ -1,0 +1,136 @@
+/* Posts Section Styles */
+.posts {
+  padding: var(--section-spacing) 0;
+}
+
+/* Posts Grid */
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Post Card */
+.post-card {
+  transition: transform var(--trans-time) ease,
+    box-shadow var(--trans-time) ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--hover-shadow);
+}
+
+.post-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+}
+
+.post-image img {
+  transition: transform var(--trans-time) ease;
+  object-fit: cover;
+  height: 200px;
+}
+
+.post-card:hover .post-image img {
+  transform: scale(1.05);
+}
+
+.post-header {
+  margin-bottom: 15px;
+}
+
+.post-date {
+  font-size: 14px;
+  color: rgb(var(--p-color));
+  opacity: 0.8;
+}
+
+.post-content {
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+/* Post Tags */
+.post-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 4px 12px;
+  background: rgba(var(--h1-color), 0.1);
+  color: rgb(var(--h1-color));
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  transition: background var(--trans-time) ease;
+}
+
+.tag:hover {
+  background: rgba(var(--h1-color), 0.2);
+}
+
+/* Read More Link */
+.read-more {
+  position: relative;
+  font-weight: 500;
+  transition: color var(--trans-time) ease;
+}
+
+.read-more::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: rgb(var(--h1-color));
+  transition: width var(--trans-time) ease;
+}
+
+.read-more:hover::after {
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .posts-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .filter-btn {
+    padding: 6px 15px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .posts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .post-card {
+    max-width: 100%;
+  }
+}
+
+/* Dark Mode Adjustments */
+.dark-mode .post-card {
+  background: rgb(var(--bg2-color));
+}
+
+.dark-mode .tag {
+  background: rgba(var(--h1-color), 0.15);
+}
+
+.dark-mode .tag:hover {
+  background: rgba(var(--h1-color), 0.25);
+}

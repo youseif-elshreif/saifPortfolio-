@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posts - Abdelrahman Saif-عبدالرحمن سيف</title>
+
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Orbitron:wght@400..900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- style -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normaliz.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/right-lift-navs.css" />
+    <link rel="stylesheet" href="css/posts/posts.css" />
+
+    <!-- dark-mode -->
+    <script>
+      if (localStorage.getItem("mode") === "true") {
+        document.documentElement.classList.add("dark-mode");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="pseudo-nav d-flex flex-column justify-center align-center">
+      <div
+        class="sec pos-relative d-flex justify-center align-center w-100 mb-15 mt-15 active"
+        data-target="posts"
+      >
+        <span></span>
+        <span class="pos-absolute">Posts</span>
+      </div>
+      <div
+        class="sec pos-relative d-flex justify-center align-center w-100 mb-15 mt-15"
+        data-target="Contact"
+      >
+        <span></span>
+        <span class="pos-absolute">Contact</span>
+      </div>
+    </div>
+    <div class="g">
+      <div class="nav pos-absolute w-100">
+        <div class="container p-40 pos-relative d-flex justify-between">
+          <div class="logo d-flex align-center">
+            <a href="" data-translat="logo">
+              <h1 class="m-0">Abdelrahman Saif</h1>
+            </a>
+          </div>
+          <div class="drop-list d-flex align-center">
+            <div class="list">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="draged d-flex">
+              <li class="m-0 w-100">
+                <a href="index.html" data-translat="home"><span>Home</span></a>
+              </li>
+              <li class="m-0 w-100">
+                <a href="designs.html" data-translat="Designs"
+                  ><span>Designs</span></a
+                >
+              </li>
+              <li class="m-0 w-100 active">
+                <a href="posts.html" data-translat="posts"
+                  ><span>Posts</span></a
+                >
+              </li>
+              <li class="m-0 w-100">
+                <a href="#about" data-translat="about"><span>About</span></a>
+              </li>
+            </ul>
+            <div class="day-night-toggle dark">
+              <div class="toggle-icon pos-relative d-flex">
+                <span class="moon-body pos-relative"></span>
+                <span class="sun-rays pos-absolute w-100 h-100">
+                  <span class="ray pos-absolute"></span>
+                  <span class="ray pos-absolute"></span>
+                  <span class="ray pos-absolute"></span>
+                  <span class="ray pos-absolute"></span>
+                  <span class="ray pos-absolute"></span>
+                  <span class="ray pos-absolute"></span>
+                  <span class="ray pos-absolute"></span>
+                  <span class="ray pos-absolute"></span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="posts" class="posts bg-light">
+        <div class="container p-40 pos-relative">
+          <h2
+            class="header w-fit text-body text-uppercase text-center pos-relative"
+            data-translat="posts"
+          >
+            Posts
+          </h2>
+
+          <!-- Posts Filter -->
+          <div class="filters d-flex justify-center align-center mb-40">
+            <button class="filter-btn active" data-filter="text">
+              Text Only
+            </button>
+            <button class="filter-btn" data-filter="image">With Images</button>
+          </div>
+
+          <!-- Posts Grid -->
+          <div class="posts-grid">
+            <!-- Post Card 1 -->
+            <div
+              class="post-card filter-item filter-item design-item standard-shadow bg-lighter rounded p-20"
+              data-type="text"
+            >
+              <div class="p-15 pt-0">
+                <div
+                  class="post-header d-flex justify-between align-center mb-15"
+                >
+                  <h3 class="text-primary font-heading font-20 m-0">
+                    The Future of Social Media
+                  </h3>
+                  <span class="post-date text-body font-14"
+                    >March 15, 2024</span
+                  >
+                </div>
+                <p class="post-content text-body font-poppins line-height-1-8">
+                  Exploring the latest trends and innovations in social media
+                  marketing. From AI-powered content creation to immersive AR
+                  experiences, discover what's shaping the future of digital
+                  engagement.
+                </p>
+                <div
+                  class="post-footer d-flex justify-between align-center mt-20"
+                >
+                  <div class="post-tags">
+                    <span class="tag">Social Media</span>
+                    <span class="tag">Marketing</span>
+                  </div>
+                  <a href="#" class="read-more text-primary font-poppins"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Post Card 2 -->
+            <div
+              class="post-card filter-item design-item standard-shadow bg-lighter rounded p-20"
+              data-type="image"
+            >
+              <div class="post-image mb-20">
+                <img
+                  src="img/team-01.jpg"
+                  alt="Social Media Strategy"
+                  class="rounded w-100"
+                />
+              </div>
+              <div class="p-15 pt-0">
+                <div
+                  class="post-header d-flex justify-between align-center mb-15"
+                >
+                  <h3 class="text-primary font-heading font-20 m-0">
+                    The Future of Social Media
+                  </h3>
+                  <span class="post-date text-body font-14"
+                    >March 15, 2024</span
+                  >
+                </div>
+                <p class="post-content text-body font-poppins line-height-1-8">
+                  Exploring the latest trends and innovations in social media
+                  marketing. From AI-powered content creation to immersive AR
+                  experiences, discover what's shaping the future of digital
+                  engagement.
+                </p>
+                <div
+                  class="post-footer d-flex justify-between align-center mt-20"
+                >
+                  <div class="post-tags">
+                    <span class="tag">Social Media</span>
+                    <span class="tag">Marketing</span>
+                  </div>
+                  <a href="#" class="read-more text-primary font-poppins"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Post Card 3 -->
+            <div
+              class="post-card filter-item design-item standard-shadow bg-lighter rounded p-20"
+              data-type="text"
+            >
+              <div class="p-15">
+                <div
+                  class="post-header d-flex justify-between align-center mb-15"
+                >
+                  <h3 class="text-primary font-heading font-20 m-0">
+                    The Future of Social Media
+                  </h3>
+                  <span class="post-date text-body font-14"
+                    >March 15, 2024</span
+                  >
+                </div>
+                <p class="post-content text-body font-poppins line-height-1-8">
+                  Exploring the latest trends and innovations in social media
+                  marketing. From AI-powered content creation to immersive AR
+                  experiences, discover what's shaping the future of digital
+                  engagement.
+                </p>
+                <div
+                  class="post-footer d-flex justify-between align-center mt-20"
+                >
+                  <div class="post-tags">
+                    <span class="tag">Social Media</span>
+                    <span class="tag">Marketing</span>
+                  </div>
+                  <a href="#" class="read-more text-primary font-poppins"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="cont">
+        <div class="main-contact w-fit">
+          <span
+            data-translat="contact"
+            class="pos-relative text-primary font-roboto"
+            >Contact us</span
+          >
+          <div class="links">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""><i class="fa-brands fa-behance"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="contact" class="contact">
+      <div class="container p-40 pos-relative">
+        <h2
+          class="header w-fit text-body text-uppercase text-center pos-relative"
+          data-translat="contact"
+        >
+          Contact
+        </h2>
+        <div class="contact-list">
+          <div
+            class="contact-item border-bottom-h1 pos-relative standard-shadow bg-light p-15 mb-20 d-flex justify-between"
+          >
+            <i class="fa-regular fa-envelope text-body font-20"></i>
+            <p class="text-primary font-poppins">exampel@gmail.com</p>
+          </div>
+          <div
+            class="contact-item border-bottom-h1 pos-relative standard-shadow bg-light p-15 mb-20 d-flex justify-between"
+          >
+            <i class="fa-regular fa-envelope text-body font-20"></i>
+            <p class="text-primary font-poppins">exampel@gmail.com</p>
+          </div>
+          <div
+            class="contact-item border-bottom-h1 pos-relative standard-shadow bg-light p-15 mb-20 d-flex justify-between"
+          >
+            <i class="fa-regular fa-envelope text-body font-20"></i>
+            <p class="text-primary font-poppins">exampel@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-light">
+      <div class="container p-40 pos-relative">
+        <h2
+          class="header w-fit text-body text-uppercase text-center pos-relative"
+          data-translat="contact"
+        >
+          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href=""><i class="fa-brands fa-behance"></i></a>
+          <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        </h2>
+        <span
+          class="text-primary font-roboto pos-relative text-center d-block font-20 font-weight-700"
+          data-translat="foot"
+        >
+          "Want the world to know your work? Leave it to me"
+        </span>
+      </div>
+    </footer>
+
+    <script type="module" src="js/events/navlist.js"></script>
+    <script type="module" src="js/events/dark.js"></script>
+    <script type="module" src="js/events/secNav.js"></script>
+    <script type="module" src="js/events/filter.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
