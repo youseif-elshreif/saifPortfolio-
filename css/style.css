@@ -1,4 +1,5 @@
 /* Import Module Stylesheets */
+@import "./fonts.css";
 @import "modules/base.css";
 @import "modules/components.css";
 @import "modules/navigation.css";
@@ -7,9 +8,10 @@
 @import "modules/portfolio.css";
 @import "modules/stats.css";
 @import "modules/experience.css";
-@import "modules/contact.css";
 @import "modules/footer.css";
 @import "./right-lift-navs.css";
+@import "modules/lightbox.css";
+@import "modules/preLoader.css";
 /* Root Variables */
 :root {
   --bg-color: 250, 250, 252; /* #fafafc - softer white */
@@ -20,7 +22,7 @@
   --accent-dark: 37, 54, 141; /* #25368D - deep blue */
   --Roboto-font: "Roboto", sans-serif;
   --Poppinsin-font: "Poppins", sans-serif;
-  --Heading-font: "Montserrat", sans-serif;
+  --Dancing-script: "Dancing Script", cursive;
   --trans-time: 0.3s;
   --standard-shadow: 0 10px 30px -10px rgba(var(--h1-color), 0.15),
     0 5px 15px -5px rgba(var(--h1-color), 0.1);

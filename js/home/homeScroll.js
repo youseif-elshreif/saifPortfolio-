@@ -1,16 +1,26 @@
 export let start = false;
 export let numbers = document.querySelectorAll(".stats-item .counter span");
+
 window.addEventListener("scroll", () => {
   reachedsec("skills", "skills-list", 150, "reached");
-  reachedsec("portfolio", "portfolio-list", 200, "reached-pro");
+  // reachedsec("portfolio", "portfolio-list", 200, "reached-pro");
+
   let titles = document.querySelectorAll(".experience .title");
   for (let i = 0; i < titles.length; i++) {
     reachedsec(`e-${i}`, `t-${i}`, 40, "reached-p");
   }
+
   if (!start) {
-    numbers.forEach((number) => {
-      reachedsec2("my-stats", number, 100);
-    });
+    const section = document.querySelector(".my-stats");
+    const sectionTop = section.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (sectionTop + 100 <= windowHeight) {
+      start = true;
+      numbers.forEach((number) => {
+        increaseNumderTo(number);
+      });
+    }
   }
 });
 
@@ -25,22 +35,16 @@ export function reachedsec(secClassName, className, h, addedClass) {
   }
 }
 
-export function reachedsec2(secClassName, e, h) {
-  const section = document.querySelector(`.${secClassName}`);
-  const sectionTop = section.getBoundingClientRect().top;
-  const windowHeight = window.innerHeight;
-
-  if (sectionTop + h <= windowHeight) {
-    increaseNumderTo(e);
-  }
-}
-
 function increaseNumderTo(target) {
-  start = true;
   const end = +target.dataset.count;
+  let current = +target.innerText || 0;
+
+  if (current >= end) return;
+
   let counter = setInterval(() => {
-    target.innerText++;
-    if (target.innerText == end) {
+    current++;
+    target.innerText = current;
+    if (current === end) {
       clearInterval(counter);
     }
   }, 1000 / end);

@@ -1,0 +1,170 @@
+[
+  {
+    "type": "branding",
+    "isCampaign": false,
+    "img": "img/team-01.jpg",
+    "title": "Brand Identity Design",
+    "alt": "Branding Design"
+  },
+  {
+    "type": "branding",
+    "isCampaign": true,
+    "company": "Coralpatra",
+    "img": "img/designs/Branding/Coralpatra/cover.jpg",
+    "title": "Coralpatra Branding",
+    "alt": "Coralpatra Branding",
+    "campaignImages": [
+      "img/designs/Branding/Coralpatra/1.jpg",
+      "img/designs/Branding/Coralpatra/2.jpg",
+      "img/designs/Branding/Coralpatra/3.jpg",
+      "img/designs/Branding/Coralpatra/5.jpg",
+      "img/designs/Branding/Coralpatra/6.jpg",
+      "img/designs/Branding/Coralpatra/اللوجو 2.jpg"
+    ],
+    "campaignTitles": [
+      "Social Media Post 1",
+      "Social Media Post 2",
+      "Social Media Post 3"
+    ],
+    "campaignDesc": [
+      "Description for post 1",
+      "Description for post 2",
+      "Description for post 3"
+    ]
+  },
+  {
+    "type": "branding",
+    "isCampaign": true,
+    "company": "JADE",
+    "img": "img/designs/Branding/JADE/cover.jpg",
+    "title": "JADE Branding",
+    "alt": "JADE Branding",
+    "campaignImages": [
+      "img/designs/Branding/JADE/جاد 2.jpg",
+      "img/designs/Branding/JADE/الموكب.jpg",
+      "img/designs/Branding/JADE/المنيو وش.jpg",
+      "img/designs/Branding/JADE/المنيو ضهر.jpg",
+      "img/designs/Branding/JADE/خصم 20.jpg"
+    ],
+    "campaignTitles": [
+      "Social Media Post 1",
+      "Social Media Post 2",
+      "Social Media Post 3"
+    ],
+    "campaignDesc": [
+      "Description for post 1",
+      "Description for post 2",
+      "Description for post 3"
+    ]
+  },
+  {
+    "type": "social",
+    "isCampaign": true,
+    "company": "Life makers",
+    "img": "img/designs/social/Project-1 صناع/Eladahi camping/cover.png",
+    "title": "Eladahi camping",
+    "alt": "Eladahi camping",
+    "campaignImages": [
+      "img/designs/social/Project-1 صناع/Eladahi camping/خليك ف المضمون.png",
+      "img/designs/social/Project-1 صناع/Eladahi camping/فودافون كاش.png",
+      "img/designs/Social/Project-1 صناع/Eladahi camping/انستا باي.png",
+      "img/designs/social/Project-1 صناع/Eladahi camping/المضمون.png",
+      "img/designs/Social/Project-1 صناع/Eladahi camping/نخيل 1.png",
+      "img/designs/social/Project-1 صناع/Eladahi camping/9 ايام.png"
+    ],
+    "campaignTitles": [
+      "Social Media Post 1",
+      "Social Media Post 2",
+      "Social Media Post 3"
+    ],
+    "campaignDesc": [
+      "Description for post 1",
+      "Description for post 2",
+      "Description for post 3"
+    ]
+  },
+  {
+    "type": "social",
+    "isCampaign": true,
+    "company": "Life makers",
+    "img": "img/designs/Social/Project-1 صناع/wead Muwsol Camping/cover.png",
+    "title": "Wead Muwsol campaign",
+    "alt": "Wead Muwsol campaign",
+    "campaignImages": [
+      "img/designs/Social/Project-1 صناع/wead Muwsol Camping/3.png",
+      "img/designs/Social/Project-1 صناع/wead Muwsol Camping/4.png",
+      "img/designs/Social/Project-1 صناع/wead Muwsol Camping/7.png",
+      "img/designs/Social/Project-1 صناع/wead Muwsol Camping/15.png",
+      "img/designs/Social/Project-1 صناع/wead Muwsol Camping/12.png",
+      "img/designs/Social/Project-1 صناع/wead Muwsol Camping/سهم اللحوم.jpg",
+      "img/designs/Social/Project-1 صناع/wead Muwsol Camping/1.png"
+    ],
+    "campaignTitles": [
+      "Social Media Post 1",
+      "Social Media Post 2",
+      "Social Media Post 3"
+    ],
+    "campaignDesc": [
+      "Description for post 1",
+      "Description for post 2",
+      "Description for post 3"
+    ]
+  },
+  {
+    "type": "social",
+    "isCampaign": true,
+    "company": "Mazny Agency",
+    "img": "img/designs/Social/Mazny Agency/cover.png",
+    "title": "Mazny Agency",
+    "alt": "Mazny Agency",
+    "campaignImages": [
+      "img/designs/Social/Mazny Agency/اسود.png",
+      "img/designs/Social/Mazny Agency/الاول بردو.png",
+      "img/designs/Social/Mazny Agency/البعبع.png",
+      "img/designs/Social/Mazny Agency/التاني.png",
+      "img/designs/Social/Mazny Agency/العيد - كريلس.png",
+      "img/designs/Social/Mazny Agency/العيد .png",
+      "img/designs/Social/Mazny Agency/العيد 2.png",
+      "img/designs/Social/Mazny Agency/معاد الكشف.png",
+      "img/designs/Social/Mazny Agency/الخصم.png"
+    ],
+    "campaignTitles": [
+      "Social Media Post 1",
+      "Social Media Post 2",
+      "Social Media Post 3"
+    ],
+    "campaignDesc": [
+      "Description for post 1",
+      "Description for post 2",
+      "Description for post 3"
+    ]
+  },
+  {
+    "type": "social",
+    "isCampaign": true,
+    "company": "Mazny Agency",
+    "img": "img/designs/Social/MTA Academy/MTA Academy/cover.png",
+    "title": "MTA Academy",
+    "alt": "MTA Academy",
+    "campaignImages": [
+      "img/designs/Social/MTA Academy/MTA Academy/1.jpg",
+      "img/designs/Social/MTA Academy/MTA Academy/85.jpg",
+      "img/designs/Social/MTA Academy/MTA Academy/9.jpg",
+      "img/designs/Social/MTA Academy/MTA Academy/32.jpg",
+      "img/designs/Social/MTA Academy/MTA Academy/434.jpg",
+      "img/designs/Social/MTA Academy/MTA Academy/ad 12.jpg",
+      "img/designs/Social/MTA Academy/MTA Academy/feedback 1.jpg",
+      "img/designs/Social/MTA Academy/MTA Academy/O.F copy.jpg"
+    ],
+    "campaignTitles": [
+      "Social Media Post 1",
+      "Social Media Post 2",
+      "Social Media Post 3"
+    ],
+    "campaignDesc": [
+      "Description for post 1",
+      "Description for post 2",
+      "Description for post 3"
+    ]
+  }
+]

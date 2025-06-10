@@ -40,23 +40,16 @@ window.addEventListener("scroll", () => {
 
   let currentSection = "";
 
-  const isAtBottom =
-    window.innerHeight + window.scrollY >= document.body.offsetHeight - 50;
-
   sections.forEach((sectionId) => {
     const section = document.getElementById(sectionId);
-    if (section) {
-      const sectionTop = section.getBoundingClientRect().top;
-      const sectionBottom = section.getBoundingClientRect().bottom;
-
-      if (isAtBottom && sectionId === "contact") {
-        currentSection = sectionId;
-      } else if (
-        (sectionTop < window.innerHeight / 2 && sectionBottom > 0) ||
-        (sectionTop >= 0 && sectionTop < window.innerHeight / 2)
-      ) {
-        currentSection = sectionId;
-      }
+    const sectionTop = section.getBoundingClientRect().top;
+    const sectionBottom = section.getBoundingClientRect().bottom;
+    if (
+      section &&
+      ((sectionTop < window.innerHeight / 2 && sectionBottom > 0) ||
+        (sectionTop >= 0 && sectionTop < window.innerHeight / 2))
+    ) {
+      currentSection = sectionId;
     }
   });
 

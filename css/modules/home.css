@@ -43,6 +43,7 @@
 .home h2,
 .home h3 {
   margin: 10px 0;
+  font-family: var(--Poppinsin-font);
 }
 
 .home h2 {

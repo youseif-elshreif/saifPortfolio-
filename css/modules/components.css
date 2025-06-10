@@ -33,6 +33,11 @@
   border-bottom-right-radius: 95% 20%;
   height: 95%;
   width: 100%;
+  transition: all var(--trans-time);
+  -webkit-transition: all var(--trans-time);
+  -moz-transition: all var(--trans-time);
+  -ms-transition: all var(--trans-time);
+  -o-transition: all var(--trans-time);
 }
 
 .header {
@@ -68,6 +73,21 @@
   top: 50%;
   transform-origin: right;
 }
+
+/* custom header */
+.v-experience .header {
+  display: flex;
+  flex-direction: column;
+  top: -43.8px;
+}
+@media (max-width: 450px) {
+  .header {
+    font-size: 30px !important;
+  }
+  .v-experience .header {
+    font-size: 28px !important;
+  }
+}
 /*end-components */
 /* start-Filter */
 .filters {
@@ -82,8 +102,8 @@
   color: rgb(var(--h1-color));
   border-radius: var(--border-radius);
   font-family: var(--Poppinsin-font);
-  font-size: 14px;
   font-weight: 500;
+  font-size: 14px;
   cursor: pointer;
   transition: all var(--trans-time) ease;
 }

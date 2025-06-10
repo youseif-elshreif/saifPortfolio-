@@ -1,7 +1,7 @@
 /* start-footer */
-footer {
-  padding-bottom: 20px;
-  background-color: rgb(var(--bg-color));
+
+footer div.container {
+  padding-bottom: 25px !important;
 }
 footer .header {
   font-size: 20px;

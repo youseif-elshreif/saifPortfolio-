@@ -13,6 +13,7 @@
 }
 
 .skills .skill {
+  width: 116px;
   font-family: var(--Poppinsin-font);
   font-size: 14px;
   color: rgb(var(--p-color));
@@ -29,7 +30,27 @@
   box-shadow: var(--standard-shadow);
 }
 
-.skills .skill svg {
+.skills .skill svg,
+.skills .skill img {
+  margin-bottom: 10px;
   width: 50px;
+}
+
+.whisk {
+  background: #ffb1ee;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.skills .skill img {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.skills .skill span {
+  text-align: center;
 }
 /* end-skills */

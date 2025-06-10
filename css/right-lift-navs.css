@@ -9,7 +9,7 @@
 .main-contact {
   position: fixed;
   padding-right: 30px;
-  margin-left: -115px;
+  margin-left: -130px;
   font-size: 18px;
   animation: up-links 0.8s cubic-bezier(0.4, 0.05, 0.34, 1.1) forwards;
   -webkit-animation: up-links 0.8s cubic-bezier(0.4, 0.05, 0.34, 1.1) forwards;
@@ -57,7 +57,7 @@
     bottom: -140px;
   }
   100% {
-    bottom: 115px;
+    bottom: 125px;
   }
 }
 
@@ -113,8 +113,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background: rgb(var(--h1-color));
     color: rgb(var(--bg-color));
@@ -134,13 +134,17 @@
     content: "\f0e0";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    font-size: 12px;
+    font-size: 18px;
     position: absolute;
   }
 
   .main-contact span.active {
     transform: scale(0.95);
     box-shadow: 0 2px 8px rgba(var(--h1-color), 0.2);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
   }
 
   /* Contact text - hidden on mobile */
@@ -195,47 +199,55 @@
 
   .main-contact .links.show a:nth-child(1) {
     transition-delay: 0.05s;
-    transform: translate(0, -40px) scale(1) rotate(-5deg);
-    -webkit-transform: translate(0, -40px) scale(1) rotate(-5deg);
-    -moz-transform: translate(0, -40px) scale(1) rotate(-5deg);
-    -ms-transform: translate(0, -40px) scale(1) rotate(-5deg);
-    -o-transform: translate(0, -40px) scale(1) rotate(-5deg);
+    transform: translate(8px, -39px) scale(1) rotate(-5deg);
+    -webkit-transform: translate(8px, -39px) scale(1) rotate(-5deg);
+    -moz-transform: translate(8px, -39px) scale(1) rotate(-5deg);
+    -ms-transform: translate(8px, -39px) scale(1) rotate(-5deg);
+    -o-transform: translate(8px, -39px) scale(1) rotate(-5deg);
   }
 
   .main-contact .links.show a:nth-child(2) {
     transition-delay: 0.1s;
-    transform: translate(32px, -42px) scale(1) rotate(-5deg);
-    -webkit-transform: translate(32px, -42px) scale(1) rotate(-5deg);
-    -moz-transform: translate(32px, -42px) scale(1) rotate(-5deg);
-    -ms-transform: translate(32px, -42px) scale(1) rotate(-5deg);
-    -o-transform: translate(32px, -42px) scale(1) rotate(-5deg);
+    transform: translate(41px, -40px) scale(1) rotate(-5deg);
+    -webkit-transform: translate(41px, -40px) scale(1) rotate(-5deg);
+    -moz-transform: translate(41px, -40px) scale(1) rotate(-5deg);
+    -ms-transform: translate(41px, -40px) scale(1) rotate(-5deg);
+    -o-transform: translate(41px, -40px) scale(1) rotate(-5deg);
   }
 
   .main-contact .links.show a:nth-child(3) {
     transition-delay: 0.15s;
-    transform: translate(55px, -15px) scale(1) rotate(-5deg);
-    -webkit-transform: translate(55px, -15px) scale(1) rotate(-5deg);
-    -moz-transform: translate(55px, -15px) scale(1) rotate(-5deg);
-    -ms-transform: translate(55px, -15px) scale(1) rotate(-5deg);
-    -o-transform: translate(55px, -15px) scale(1) rotate(-5deg);
+    transform: translate(65px, -18px) scale(1) rotate(-5deg);
+    -webkit-transform: translate(65px, -18px) scale(1) rotate(-5deg);
+    -moz-transform: translate(65px, -18px) scale(1) rotate(-5deg);
+    -ms-transform: translate(65px, -18px) scale(1) rotate(-5deg);
+    -o-transform: translate(65px, -18px) scale(1) rotate(-5deg);
   }
 
   .main-contact .links.show a:nth-child(4) {
     transition-delay: 0.2s;
-    transform: translate(50px, 20px) scale(1) rotate(-5deg);
-    -webkit-transform: translate(50px, 20px) scale(1) rotate(-5deg);
-    -moz-transform: translate(50px, 20px) scale(1) rotate(-5deg);
-    -ms-transform: translate(50px, 20px) scale(1) rotate(-5deg);
-    -o-transform: translate(50px, 20px) scale(1) rotate(-5deg);
+    transform: translate(68px, 14px) scale(1) rotate(-5deg);
+    -webkit-transform: translate(68px, 14px) scale(1) rotate(-5deg);
+    -moz-transform: translate(68px, 14px) scale(1) rotate(-5deg);
+    -ms-transform: translate(68px, 14px) scale(1) rotate(-5deg);
+    -o-transform: translate(68px, 14px) scale(1) rotate(-5deg);
+  }
+  .main-contact .links.show a:nth-child(5) {
+    transition-delay: 0.25s;
+    transform: translate(48px, 39px) scale(1) rotate(-5deg);
+    -webkit-transform: translate(48px, 39px) scale(1) rotate(-5deg);
+    -moz-transform: translate(48px, 39px) scale(1) rotate(-5deg);
+    -ms-transform: translate(48px, 39px) scale(1) rotate(-5deg);
+    -o-transform: translate(48px, 39px) scale(1) rotate(-5deg);
   }
 
   .main-contact .links a:hover {
-    transform: scale(1.15) !important;
+    scale: 1.1 !important;
     box-shadow: 0 6px 15px rgba(var(--h1-color), 0.2);
   }
 
   .main-contact .links a:hover i {
-    transform: scale(1.1);
+    scale: 1.1;
   }
 }
 /* end-main-contact */
@@ -396,7 +408,7 @@
 }
 
 .pseudo-nav div:hover span:nth-child(1):not(.active span:nth-child(1)) {
-  transform: scale(1.3);
+  scale: 1.1;
   border-color: rgb(var(--h1-color));
   box-shadow: 0 0 0 4px rgba(var(--bg-color), 0.5),
     0 0 10px rgba(var(--h1-color), 0.3);
@@ -412,10 +424,10 @@
   border: 1px solid rgba(var(--h1-color), 0.2);
   color: rgb(var(--h1-color));
   font-family: var(--Poppinsin-font);
+  font-weight: 500;
   transform: translateY(-50%) translateX(10px);
   pointer-events: none;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  font-weight: 500;
   letter-spacing: 0.5px;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   min-width: 80px;
@@ -430,6 +442,10 @@
 .pseudo-nav div:hover span:nth-child(2) {
   opacity: 1;
   transform: translateY(-50%) translateX(0);
+  -webkit-transform: translateY(-50%) translateX(0);
+  -moz-transform: translateY(-50%) translateX(0);
+  -ms-transform: translateY(-50%) translateX(0);
+  -o-transform: translateY(-50%) translateX(0);
 }
 
 @media (max-width: 767px) {

@@ -1,74 +1,43 @@
 /* Designs Page Styles */
 
-.custom-list.reached-pro .custom-item {
-  top: 20px;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  animation: custom-item 0.8s cubic-bezier(0.4, 0.05, 0.34, 1.1) forwards !important;
-  -webkit-animation: custom-item 0.8s cubic-bezier(0.4, 0.05, 0.34, 1.1)
-    forwards !important;
-  transform: translate3d(0, 0, 0) !important;
-  -webkit-transform: translate3d(0, 0, 0) !important;
-  -moz-transform: translate3d(0, 0, 0) !important;
-  -ms-transform: translate3d(0, 0, 0) !important;
-  -o-transform: translate3d(0, 0, 0) !important;
+.img-container {
+  background-image: linear-gradient(
+    180deg,
+    rgba(var(--p-color), 1) 18%,
+    transparent 100%
+  );
 }
 
-@keyframes custom-item {
-  0% {
-    top: 20px;
-  }
-  100% {
-    top: 0px;
-    opacity: 1;
-  }
+.img-container .d-name {
+  top: 100px;
+  padding: 0 20px;
+  font-size: 40px;
+  -webkit-text-stroke: 0.6px var(--bg2-color);
+  font-family: var(--Dancing-script);
+  color: rgb(var(--bg2-color));
+  display: block;
+  text-align: center;
 }
 
-.custom-item .design-card {
-  animation: card 0.8s cubic-bezier(0.4, 0.05, 0.34, 1.1) forwards !important;
-  -webkit-animation: card 0.8s cubic-bezier(0.4, 0.05, 0.34, 1.1) forwards !important;
-}
-.custom-item:hover .design-card {
-  animation: cardHover 0.8s cubic-bezier(0.4, 0.05, 0.34, 1.1) forwards !important;
-  -webkit-animation: cardHover 0.8s cubic-bezier(0.4, 0.05, 0.34, 1.1) forwards !important;
-}
-@keyframes card {
-  0% {
-    overflow: visible;
-  }
-  70% {
-    overflow: hidden;
-  }
-  100% {
-    overflow: hidden;
-  }
-}
-
-@keyframes cardHover {
-  0% {
-    overflow: hidden;
-  }
-  70% {
-    overflow: visible;
-  }
-  100% {
-    overflow: visible;
-  }
+.design-card img {
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 
 /* Main Showcase Section */
 .designs-showcase {
   padding: 120px 0;
+  min-height: calc(100vh - 56px);
 }
 
 /* Designs List Grid */
 .designs-list {
-  display: grid;
+  display: none;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 80px 25px;
   perspective: 1000px;
   margin-top: 40px;
+  opacity: 0;
 }
 
 /* Design Item Styles */
@@ -78,9 +47,8 @@
 }
 /* Campaign indicator */
 .campaign-indicator {
-  top: 15px;
-  right: 15px;
   background-color: rgb(var(--h1-color));
+  right: 15px;
   color: white;
   font-family: var(--Poppinsin-font);
   font-size: 12px;
@@ -89,85 +57,11 @@
   z-index: 2;
 }
 
-/* Lightbox Styles */
-.lightbox {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.3s ease;
-}
-
-.lightbox.active {
-  visibility: visible;
-  opacity: 1;
-}
-
-.lightbox-overlay {
-  background: rgba(0, 0, 0, 0.8);
-  top: 0;
-  left: 0;
-}
-
-.lightbox-content {
-  max-width: 900px;
-  width: 90%;
-  background: rgb(var(--bg-color));
-  border-radius: var(--border-radius);
-  padding: 30px;
-  transform: scale(0.9);
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  opacity: 0;
-  z-index: 2;
-}
-
-.lightbox.active .lightbox-content {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.close-lightbox {
+.campaign-indicator.company {
   top: 15px;
-  right: 15px;
-  width: 40px;
-  height: 40px;
-  background: rgb(var(--bg-color));
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 3;
-  box-shadow: var(--standard-shadow);
 }
-
-.close-lightbox i {
-  font-size: 20px;
-  color: rgb(var(--p-color));
-}
-
-.lightbox-image-container {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.lightbox-image-container img {
-  max-width: 100%;
-  max-height: 60vh;
-  border-radius: var(--border-radius);
-  display: block;
-  margin: 0 auto 20px;
-  box-shadow: var(--standard-shadow);
-}
-
-.lightbox-details {
-  text-align: left;
-  margin-top: 20px;
+.campaign-indicator.isCampaign {
+  top: 42px;
 }
 
 /* Campaign Controls */
@@ -175,6 +69,7 @@
   margin-top: 20px;
   align-items: center;
   display: none;
+  color: rgb(var(--p-color));
 }
 
 .campaign-controls.active {
@@ -182,6 +77,7 @@
 }
 
 .nav-btn {
+  color: rgb(var(--p-color));
   background: rgb(var(--bg-color));
   border: none;
   width: 50px;

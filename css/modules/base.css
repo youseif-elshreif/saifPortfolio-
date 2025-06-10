@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  overflow-x: hidden;
+  overflow: hidden;
   background-color: rgb(var(--bg2-color));
 }
 
@@ -46,3 +46,28 @@ img::selection {
   background: transparent;
 }
 /* end-global-roles */
+
+/* للمتصفحات التي تدعم WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+  /* width: 10px; */
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--p-color));
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(var(--p-color), 0.8);
+}
+
+/* للمتصفحات التي تدعم Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(var(--p-color)) rgba(0, 0, 0, 0.1);
+}

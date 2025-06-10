@@ -6,6 +6,8 @@
 
 .experience .experience-item .title {
   perspective: 1000px;
+  display: flex;
+  flex-direction: column;
 }
 
 .experience .experience-item .title::before {
@@ -29,7 +31,11 @@
   -ms-transform: scale(0);
   -o-transform: scale(0);
 }
-
+.sub-title {
+  font-size: 12px;
+  text-transform: capitalize;
+  color: rgba(var(--p-color), 0.7);
+}
 .experience .reached-p::before {
   animation: h-before 0.5s cubic-bezier(0.4, 0.05, 0.34, 1.1) forwards;
   -webkit-animation: h-before 0.5s cubic-bezier(0.4, 0.05, 0.34, 1.1) forwards;
@@ -72,7 +78,7 @@
   -o-transform: scale(0) translatez(0);
   transform-origin: right;
   box-shadow: var(--standard-shadow),
-    13px 0px 10px 0px rgba(var(--h1-color), 0.3);
+    5px 0px 25px 5px rgba(var(--h1-color), 0.3);
   padding: 16px 16px 16px 30px;
 }
 
@@ -137,13 +143,18 @@
   }
 }
 
-.experience .experience-item p {
-  color: rgba(var(--p-color), 0.7);
-
+.experience .experience-item ul {
+  color: rgba(var(--p-color), 0.8);
+  list-style: disc;
   padding-left: 20px;
 }
 
-.experience .experience-item p::before {
+.experience .experience-item ul li::marker {
+  color: rgb(var(--h1-color));
+  font-size: 25px;
+}
+
+.experience .experience-item ul::before {
   content: "";
   position: absolute;
   width: 3px;
@@ -159,12 +170,12 @@
   transform-origin: top;
 }
 
-.experience .reached-p + p::before {
+.experience .reached-p + ul::before {
   animation: p-before 1s cubic-bezier(0.4, 0.05, 0.34, 1.1) forwards;
   -webkit-animation: p-before 1s cubic-bezier(0.4, 0.05, 0.34, 1.1) forwards;
 }
 
-.experience p span {
+.experience ul li {
   position: relative;
   left: -45px;
   opacity: 0;
@@ -175,7 +186,7 @@
   -o-transition: all 1.2s;
 }
 
-.experience .reached-p + p span {
+.experience .reached-p + ul li {
   left: 0px;
   opacity: 1;
 }
@@ -242,13 +253,17 @@
     font-size: 16px;
   }
 
-  .experience .experience-item p::before {
+  .experience .experience-item ul::before {
     left: -25px;
   }
 
-  .experience .experience-item p {
+  .experience .experience-item ul {
     padding-left: 0;
     font-size: 14px;
   }
 }
 /* end-experience */
+
+.v-experience {
+  background-color: rgb(var(--bg2-color));
+}

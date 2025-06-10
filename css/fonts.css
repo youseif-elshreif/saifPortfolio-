@@ -1,0 +1,29 @@
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/poppins-v23-latin/poppins-v23-latin-500.woff2")
+    format("woff2");
+}
+
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v48-latin/roboto-v48-latin-700.woff2")
+    format("woff2");
+}
+
+/* dancing-script-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Dancing Script";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/dancing-script-v28-latin/dancing-script-v28-latin-700.woff2")
+    format("woff2");
+}

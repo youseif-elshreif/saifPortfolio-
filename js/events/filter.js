@@ -1,14 +1,15 @@
-// Filter Functionality
 const filterButtons = document.querySelectorAll(".filter-btn");
-const filterableItems = [...document.querySelectorAll(".filter-item")];
 
-document.addEventListener("DOMContentLoaded", () => {
+export function applyFilter(button) {
+  const filterValue = button.getAttribute("data-filter");
+  const filterableItems = document.querySelectorAll(".filter-item");
+
   filterableItems.forEach((item) => {
-    item.style.display = "none";
+    item.getAttribute("data-type") === filterValue || filterValue === "all"
+      ? (item.style.display = "flex")
+      : (item.style.display = "none");
   });
-  let defaultFilter = document.querySelector(".filter-btn.active");
-  applyFilter(defaultFilter);
-});
+}
 
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -17,13 +18,3 @@ filterButtons.forEach((button) => {
     applyFilter(button);
   });
 });
-
-function applyFilter(button) {
-  const filterValue = button.getAttribute("data-filter");
-
-  filterableItems.forEach((item) => {
-    item.getAttribute("data-type") === filterValue || filterValue === "all"
-      ? (item.style.display = "flex")
-      : (item.style.display = "none");
-  });
-}
