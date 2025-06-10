@@ -1,16 +1,9 @@
 [
   {
     "type": "branding",
-    "isCampaign": false,
-    "img": "img/team-01.jpg",
-    "title": "Brand Identity Design",
-    "alt": "Branding Design"
-  },
-  {
-    "type": "branding",
     "isCampaign": true,
     "company": "Coralpatra",
-    "img": "img/designs/Branding/Coralpatra/cover.jpg",
+    "img": "img/designs/Branding/Coralpatra/cover.webp",
     "title": "Coralpatra Branding",
     "alt": "Coralpatra Branding",
     "campaignImages": [
@@ -36,7 +29,7 @@
     "type": "branding",
     "isCampaign": true,
     "company": "JADE",
-    "img": "img/designs/Branding/JADE/cover.jpg",
+    "img": "img/designs/Branding/JADE/cover.webp",
     "title": "JADE Branding",
     "alt": "JADE Branding",
     "campaignImages": [
@@ -61,7 +54,7 @@
     "type": "social",
     "isCampaign": true,
     "company": "Life makers",
-    "img": "img/designs/Social/Project-1 صناع/Eladahi camping/cover.png",
+    "img": "img/designs/Social/Project-1 صناع/Eladahi camping/cover.webp",
     "title": "Eladahi camping",
     "alt": "Eladahi camping",
     "campaignImages": [
@@ -87,7 +80,7 @@
     "type": "social",
     "isCampaign": true,
     "company": "Life makers",
-    "img": "img/designs/Social/Project-1 صناع/wead Muwsol Camping/cover.png",
+    "img": "img/designs/Social/Project-1 صناع/wead Muwsol Camping/cover.webp",
     "title": "Wead Muwsol campaign",
     "alt": "Wead Muwsol campaign",
     "campaignImages": [
@@ -114,7 +107,7 @@
     "type": "social",
     "isCampaign": true,
     "company": "Mazny Agency",
-    "img": "img/designs/Social/Mazny Agency/cover.png",
+    "img": "img/designs/Social/Mazny Agency/cover.webp",
     "title": "Mazny Agency",
     "alt": "Mazny Agency",
     "campaignImages": [
@@ -143,7 +136,7 @@
     "type": "social",
     "isCampaign": true,
     "company": "Mazny Agency",
-    "img": "img/designs/Social/MTA Academy/MTA Academy/cover.png",
+    "img": "img/designs/Social/MTA Academy/MTA Academy/cover.webp",
     "title": "MTA Academy",
     "alt": "MTA Academy",
     "campaignImages": [

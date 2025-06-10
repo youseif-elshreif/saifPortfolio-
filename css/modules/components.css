@@ -75,7 +75,7 @@
 }
 
 /* custom header */
-.v-experience .header {
+.c-header {
   display: flex;
   flex-direction: column;
   top: -43.8px;
@@ -84,8 +84,9 @@
   .header {
     font-size: 30px !important;
   }
-  .v-experience .header {
+  .c-header {
     font-size: 28px !important;
+    top: -32.6px;
   }
 }
 /*end-components */
@@ -114,3 +115,14 @@
   color: rgb(var(--bg-color));
 }
 /* end-Filter */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

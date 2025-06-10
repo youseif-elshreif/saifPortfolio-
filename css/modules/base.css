@@ -11,6 +11,33 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+:where(
+    body,
+    div,
+    section,
+    header,
+    footer,
+    article,
+    aside,
+    main,
+    nav,
+    ul,
+    li,
+    a,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    span,
+    button
+  ) {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  will-change: background-color, color;
+}
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;

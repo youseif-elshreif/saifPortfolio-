@@ -1,17 +1,11 @@
 /* Import Module Stylesheets */
 @import "./fonts.css";
+@import "modules/right-lift-navs.css";
 @import "modules/base.css";
 @import "modules/components.css";
 @import "modules/navigation.css";
-@import "modules/home.css";
-@import "modules/skills.css";
-@import "modules/portfolio.css";
-@import "modules/stats.css";
-@import "modules/experience.css";
 @import "modules/footer.css";
-@import "./right-lift-navs.css";
-@import "modules/lightbox.css";
-@import "modules/preLoader.css";
+
 /* Root Variables */
 :root {
   --bg-color: 250, 250, 252; /* #fafafc - softer white */

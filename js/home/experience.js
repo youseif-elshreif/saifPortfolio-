@@ -28,7 +28,6 @@ export async function loadExperience(link, list) {
               <li>
                 ${desc}
               </li>
-           
           `
             )
             .join("")}

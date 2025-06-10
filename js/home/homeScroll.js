@@ -3,8 +3,6 @@ export let numbers = document.querySelectorAll(".stats-item .counter span");
 
 window.addEventListener("scroll", () => {
   reachedsec("skills", "skills-list", 150, "reached");
-  // reachedsec("portfolio", "portfolio-list", 200, "reached-pro");
-
   let titles = document.querySelectorAll(".experience .title");
   for (let i = 0; i < titles.length; i++) {
     reachedsec(`e-${i}`, `t-${i}`, 40, "reached-p");
@@ -37,17 +35,24 @@ export function reachedsec(secClassName, className, h, addedClass) {
 
 function increaseNumderTo(target) {
   const end = +target.dataset.count;
-  let current = +target.innerText || 0;
+  const duration = 1500; // 1 ثانية
+  const startTime = performance.now();
 
-  if (current >= end) return;
+  function update(currentTime) {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const value = Math.floor(progress * end);
 
-  let counter = setInterval(() => {
-    current++;
-    target.innerText = current;
-    if (current === end) {
-      clearInterval(counter);
+    target.innerText = value;
+
+    if (progress < 1) {
+      requestAnimationFrame(update);
+    } else {
+      target.innerText = end; // تأكيد الوصول للقيمة النهائية
     }
-  }, 1000 / end);
+  }
+
+  requestAnimationFrame(update);
 }
 
 function addClassToElement(e, className) {

@@ -31,3 +31,10 @@
 "Description for post 3"
 ]
 }
+
+<!-- <div class="text pos-absolute w-90 bg-lighter p-15 rounded font-poppins text-body">
+        <h3 class="mb-15">${design.title}</h3>
+        <div class="more-details d-flex align-center justify-between mt-10 font-weight-500">
+        <p>${design.isCampaign ? "View Campaign" : "View design"}</p>
+        <i class="fas fa-long-arrow-alt-right"></i>
+</div> -->

@@ -184,6 +184,7 @@
   -moz-transition: all 1.2s;
   -ms-transition: all 1.2s;
   -o-transition: all 1.2s;
+  margin-bottom: 5px;
 }
 
 .experience .reached-p + ul li {
@@ -260,6 +261,7 @@
   .experience .experience-item ul {
     padding-left: 0;
     font-size: 14px;
+    list-style: none;
   }
 }
 /* end-experience */
