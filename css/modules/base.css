@@ -3,39 +3,37 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all var(--trans-time) !important;
-  -webkit-transition: all var(--trans-time) !important;
-  -moz-transition: all var(--trans-time) !important;
-  -ms-transition: all var(--trans-time) !important;
-  -o-transition: all var(--trans-time) !important;
   -webkit-tap-highlight-color: transparent;
 }
 
-:where(
-    body,
-    div,
-    section,
-    header,
-    footer,
-    article,
-    aside,
-    main,
-    nav,
-    ul,
-    li,
-    a,
-    p,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    span,
-    button
-  ) {
-  transition: background-color 0.3s ease, color 0.3s ease;
-  will-change: background-color, color;
+body,
+h1,
+h2,
+h3,
+p,
+span,
+a,
+i,
+li,
+ul,
+section,
+div,
+footer {
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease, margin 0.3s ease, padding 0.3s ease,
+    text-shadow 0.3s ease, opacity 0.3s ease   !important;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease,
+    transform 0.3s ease, box-shadow 0.3s ease, margin 0.3s ease,
+    padding 0.3s ease !important;
+  -moz-transition: background-color 0.3s ease, color 0.3s ease,
+    transform 0.3s ease, box-shadow 0.3s ease, margin 0.3s ease,
+    padding 0.3s ease !important;
+  -ms-transition: background-color 0.3s ease, color 0.3s ease,
+    transform 0.3s ease, box-shadow 0.3s ease, margin 0.3s ease,
+    padding 0.3s ease !important;
+  -o-transition: background-color 0.3s ease, color 0.3s ease,
+    transform 0.3s ease, box-shadow 0.3s ease, margin 0.3s ease,
+    padding 0.3s ease !important;
 }
 
 html {

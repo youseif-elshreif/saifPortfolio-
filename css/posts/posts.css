@@ -1,7 +1,10 @@
 /* Posts Section Styles */
+@import "../modules/preLoader.css";
+
 .posts {
   padding: var(--section-spacing) 0;
   min-height: calc(100vh - 56px);
+  background-color: rgb(var(--bg2-color));
 }
 
 /* Posts Grid */
@@ -66,6 +69,7 @@
 .post-content {
   flex-grow: 1;
   margin-bottom: 20px;
+  direction: rtl;
 }
 
 /* Post Tags */
@@ -137,7 +141,7 @@
 
 /* Dark Mode Adjustments */
 .dark-mode .post-card {
-  background: rgb(var(--bg2-color));
+  background: rgb(var(--bg-color));
 }
 
 .dark-mode .tag {
@@ -196,6 +200,10 @@
   z-index: 2;
 }
 
+.post-contentt {
+  direction: rtl;
+}
+
 .lightbox.active .lightbox-content {
   transform: scale(1);
   opacity: 1;
@@ -238,12 +246,13 @@
   box-shadow: var(--standard-shadow, 0 4px 15px rgba(0, 0, 0, 0.3));
 }
 
-#lightbox-title {
+.post-title {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 700;
-  color: rgb(var(--p-color, 0, 0, 0));
+  color: rgb(var(--h1-color, 0, 0, 0));
   margin-bottom: 8px;
+  padding-right: 50px;
 }
 
 .post-date#lightbox-date {

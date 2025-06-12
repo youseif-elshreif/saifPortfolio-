@@ -5,7 +5,7 @@
 @import "modules/components.css";
 @import "modules/navigation.css";
 @import "modules/footer.css";
-
+@import "modules/cards.css";
 /* Root Variables */
 :root {
   --bg-color: 250, 250, 252; /* #fafafc - softer white */
@@ -23,7 +23,7 @@
   --hover-shadow: 0 14px 40px -10px rgba(var(--h1-color), 0.2),
     0 10px 20px -5px rgba(var(--h1-color), 0.15);
   --border-radius: 12px;
-  --text-shadow: 0 2px 5px rgba(var(--h1-color), 0.2);
+  --text-shadow: 0 2px 5px rgba(var(--h1-color), 0.6);
   --section-spacing: 100px;
   --content-spacing: 60px;
   --element-spacing: 25px;

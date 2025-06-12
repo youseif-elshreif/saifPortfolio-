@@ -126,3 +126,74 @@
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+/* buttons */
+.home .cta-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Button styles */
+.primary-btn,
+.secondary-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-family: var(--Poppinsin-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-align: center;
+  box-shadow: var(--standard-shadow),
+    0px 0px 10px 0px rgba(var(--h1-color), 0.3);
+}
+
+.primary-btn {
+  background: rgb(var(--h1-color));
+  color: rgb(var(--bg-color));
+}
+
+.secondary-btn {
+  background: rgba(var(--h1-color), 0.1);
+  color: rgb(var(--h1-color));
+  border: 1px solid rgba(var(--h1-color), 0.3);
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+  transform: translateY(-3px);
+}
+
+.primary-btn:hover {
+  box-shadow: 0 10px 20px rgba(var(--h1-color), 0.2);
+}
+
+.secondary-btn:hover {
+  background: rgba(var(--h1-color), 0.15);
+  box-shadow: 0 10px 20px rgba(var(--h1-color), 0.1);
+}
+
+.primary-btn::after,
+.secondary-btn::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  top: 50%;
+  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s ease;
+}

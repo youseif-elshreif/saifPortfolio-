@@ -3,6 +3,10 @@
   justify-content: space-evenly;
 }
 
+.stats-item {
+  width: 142px;
+}
+
 .stats-item:hover {
   box-shadow: var(--standard-shadow);
 }
@@ -56,11 +60,11 @@
 }
 
 .stats-item .counter::after {
-  right: -15px;
+  right: -20px;
 }
 
 .stats-item .counter::before {
-  left: -15px;
+  left: -20px;
 }
 
 .stats-item .counter::before,

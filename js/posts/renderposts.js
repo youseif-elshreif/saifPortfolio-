@@ -37,7 +37,8 @@ async function displayPosts() {
     postCard.innerHTML = `
       ${imageBlock}
       <div class="p-15 ${post.type === "image" ? "pt-0" : ""}">
-        <div class="post-header d-flex justify-between align-center mb-15">
+        <div class="post-header d-flex justify-between align-center mb-15 
+        ${post.titleDir}">
           <h3 class="text-primary font-heading font-20 m-0">${post.title}</h3>
           <span class="post-date text-body font-14">${post.date}</span>
         </div>

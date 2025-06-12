@@ -1,24 +1,111 @@
 /* start-footer */
 
-footer div.container {
+footer {
+  padding-top: 25px !important;
   padding-bottom: 25px !important;
 }
-footer .header {
-  font-size: 20px;
-  top: -11.9px;
-  margin-bottom: 10px;
-}
-footer .header i {
-  margin-left: 8px;
+
+footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: rgb(var(--p-color));
+  font-family: var(--Roboto-font);
 }
 
-footer span {
+footer .container div {
+  flex: 1;
+  padding: 0 15px;
+}
+footer h3 {
   color: rgb(var(--h1-color));
   font-family: var(--Roboto-font);
-  position: relative;
-  text-align: center;
-  display: block;
-  font-size: 20px;
-  font-weight: 700;
+  text-transform: uppercase;
+  padding: 7.5px 0;
+  font-size: 25px;
 }
+
+footer h4 {
+  color: rgb(var(--h1-color));
+  font-family: var(--Roboto-font);
+  text-transform: uppercase;
+  padding: 7.5px 0;
+  font-size: 18px;
+}
+
+footer ul {
+  list-style: ">";
+}
+
+footer ul li {
+  padding-left: 10px;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  width: fit-content;
+}
+
+footer ul li:hover a {
+  padding-left: 8px;
+  text-shadow: var(--text-shadow);
+}
+
+footer ul li::marker {
+  color: rgb(var(--h1-color));
+  font-weight: bold;
+  font-size: 20px;
+}
+
+footer ul h3 {
+  color: rgb(var(--h1-color));
+  font-size: 25px;
+}
+
+footer .footer-about p {
+  color: rgb(var(--p-color));
+  font-family: var(--Roboto-font);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+footer .footer-contact p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+footer .footer-social a {
+  margin-right: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+  display: inline-block;
+}
+
+footer .footer-social a:hover {
+  color: rgba(var(--h1-color), 0.8);
+  text-decoration: none;
+}
+
+footer .footer-bottom {
+  text-align: center;
+  font-family: var(--Poppinsin-font);
+  font-size: 20px;
+  color: rgb(var(--p-color));
+  margin-top: 20px;
+}
+
 /* end-footer */
+
+@media (max-width: 992px) {
+  footer .container div {
+    flex-basis: calc(50% - 20px);
+  }
+}
+@media (max-width: 432px) {
+  footer {
+    text-align: center;
+  }
+  footer li {
+    margin: 5px auto;
+    margin-left: auto !important;
+  }
+}

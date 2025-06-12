@@ -48,6 +48,10 @@
   text-shadow: 1px 1px 3px rgba(var(--btn-color), 0.5);
 }
 
+.main-contact .links a:hover i {
+  color: rgba(var(--h1-color), 0.8) !important;
+}
+
 .main-contact .links a:not(:first-child) i {
   margin-left: 10px;
 }
@@ -454,12 +458,40 @@
     left: 0px;
     top: 35%;
     height: 280px;
+    opacity: 1;
+    transform: translateY(-50%) translateX(0px);
+    -webkit-transform: translateY(-50%) translateX(0px);
+    -moz-transform: translateY(-50%) translateX(0px);
+    -ms-transform: translateY(-50%) translateX(0px);
+    -o-transform: translateY(-50%) translateX(0px);
+  }
+
+  .pseudo-nav::before {
+    height: 100%;
+    opacity: 1;
+  }
+
+  @keyframes line-grow {
+  }
+
+  @keyframes nav-items-appear {
+  }
+
+  @keyframes nav-appear {
+  }
+  .pseudo-nav div {
+    opacity: 1;
+    transform: translateX(0);
   }
 
   .pseudo-nav div span:nth-child(2) {
     right: auto;
     left: 200%;
     transform: translateY(-50%) translateX(-10px);
+    -webkit-transform: translateY(-50%) translateX(-10px);
+    -moz-transform: translateY(-50%) translateX(-10px);
+    -ms-transform: translateY(-50%) translateX(-10px);
+    -o-transform: translateY(-50%) translateX(-10px);
   }
 
   .pseudo-nav div:hover span:nth-child(2) {

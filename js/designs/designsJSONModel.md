@@ -1,3 +1,5 @@
+<!-- single design -->
+
 {
 "type": "branding",
 "isCampaign": false,
@@ -5,6 +7,9 @@
 "title": "Brand Identity Design",
 "alt": "Branding Design"
 }
+
+<!-- campaign -->
+
 {
 "type": "branding",
 "isCampaign": true,

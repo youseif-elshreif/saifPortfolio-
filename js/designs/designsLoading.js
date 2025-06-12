@@ -32,7 +32,7 @@ async function getDesigns() {
     item.innerHTML = `
       <div class="design-card pos-relative d-flex rounded standard-shadow bg-light">
       <div class="img-container rounded z-2 pos-absolute w-100 h-100">
-      <span class="d-name pos-relative">${design.title}</span>
+        <span class="d-name pos-relative">${design.title}</span>
       </div>
         <img src="${design.img}" loading="lazy" alt="${design.alt}" />
         ${
@@ -68,12 +68,7 @@ async function getDesigns() {
     container.appendChild(item);
   });
   let preLoader = document.querySelector(".loader");
-  await new Promise((resolve) => {
-    setTimeout(() => {
-      if (preLoader) preLoader.remove();
-      resolve();
-    }, 1000);
-  });
+  if (preLoader) preLoader.remove();
   container.style.display = "grid";
   container.style.opacity = "1";
 }

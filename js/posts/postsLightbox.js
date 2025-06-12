@@ -11,6 +11,11 @@ export function setupPostLightbox() {
 
   document.querySelectorAll(".post-card").forEach((card) => {
     card.addEventListener("click", () => {
+      let titleDir = card
+        .querySelector(".post-header")
+        .classList.contains("rtl")
+        ? "rtl"
+        : "ltr";
       const img = card.querySelector(".post-image img");
       if (img) {
         imageContainer.style.display = "block";
@@ -23,6 +28,7 @@ export function setupPostLightbox() {
       }
 
       titleEl.textContent = card.querySelector("h3").textContent;
+      titleEl.classList.add(titleDir);
       dateEl.textContent = card.querySelector(".post-date").textContent;
       contentEl.innerHTML = card.querySelector(".post-content").innerHTML;
       tagsEl.innerHTML = card.querySelector(".post-tags").innerHTML;

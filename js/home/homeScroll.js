@@ -3,6 +3,7 @@ export let numbers = document.querySelectorAll(".stats-item .counter span");
 
 window.addEventListener("scroll", () => {
   reachedsec("skills", "skills-list", 150, "reached");
+  reachedsec("services", "services-list", 200, "reached-pro");
   let titles = document.querySelectorAll(".experience .title");
   for (let i = 0; i < titles.length; i++) {
     reachedsec(`e-${i}`, `t-${i}`, 40, "reached-p");

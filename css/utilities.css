@@ -259,3 +259,15 @@
 .opacity-1 {
   opacity: 1;
 }
+
+.rtl {
+  flex-direction: row;
+  direction: rtl;
+  text-align: right;
+}
+
+.ltr {
+  flex-direction: row-reverse;
+  direction: rtl;
+  text-align: left;
+}
