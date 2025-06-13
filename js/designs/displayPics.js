@@ -66,8 +66,25 @@ export function setLightbox(item) {
 
 closeBtn.addEventListener("click", closeLightbox);
 lightboxOverlay.addEventListener("click", closeLightbox);
+
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape" && lightbox.classList.contains("active")) {
+  if (!lightbox.classList.contains("active")) return;
+
+  if (e.key === "Escape") {
     closeLightbox();
+  }
+
+  if (e.key === "ArrowLeft") {
+    const hasCampaign = campaignControls.style.display === "flex";
+    if (hasCampaign) {
+      document.querySelector("#prev-slide").click();
+    }
+  }
+
+  if (e.key === "ArrowRight") {
+    const hasCampaign = campaignControls.style.display === "flex";
+    if (hasCampaign) {
+      document.querySelector("#next-slide").click();
+    }
   }
 });
