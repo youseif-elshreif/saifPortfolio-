@@ -20,8 +20,16 @@ function closeLightbox() {
 }
 
 function updateLightboxContent(images, index) {
-  lightboxImage.src = images[index];
-  slideIndicator.innerHTML = `${index + 1}/${images.length}`;
+  lightboxImage.classList.add("fade-out");
+
+  setTimeout(() => {
+    lightboxImage.src = images[index];
+    slideIndicator.innerHTML = `${index + 1}/${images.length}`;
+
+    lightboxImage.onload = () => {
+      lightboxImage.classList.remove("fade-out");
+    };
+  }, 150);
 }
 
 function setLightboxFromCurrentSlide(index, images) {
