@@ -78,7 +78,7 @@
   -o-transform: scale(0) translatez(0);
   transform-origin: right;
   box-shadow: var(--standard-shadow),
-    5px 0px 25px 5px rgba(var(--h1-color), 0.3);
+    3px 0px 25px 0px rgba(var(--h1-color), 0.3);
   padding: 16px 16px 16px 30px;
 }
 
