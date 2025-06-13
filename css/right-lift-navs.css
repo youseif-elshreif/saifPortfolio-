@@ -20,7 +20,7 @@
   -o-transform: rotate(90deg);
 }
 
-.main-contact span::before {
+.main-contact .icon::before {
   content: "";
   position: absolute;
   width: 30px;
@@ -109,7 +109,7 @@
     }
   }
 
-  .main-contact span {
+  .main-contact .icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -130,7 +130,7 @@
     content: none;
   }
 
-  .main-contact span::after {
+  .main-contact .icon::after {
     content: "\f0e0";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -138,7 +138,7 @@
     position: absolute;
   }
 
-  .main-contact span.active {
+  .main-contact .icon.active {
     transform: scale(0.95);
     box-shadow: 0 2px 8px rgba(var(--h1-color), 0.2);
     -webkit-transform: scale(0.95);
@@ -148,7 +148,7 @@
   }
 
   /* Contact text - hidden on mobile */
-  .main-contact span > span {
+  .main-contact .icon > span {
     display: none;
   }
 
