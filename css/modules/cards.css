@@ -274,11 +274,20 @@
     -moz-transform: translateZ(-60px);
     -ms-transform: translateZ(-60px);
     -o-transform: translateZ(-60px);
+    overflow: hidden;
   }
 
-  .custom-list.reached-pro .custom-item {
-    animation: proItem2 1s cubic-bezier(0.4, 0.05, 0.34, 1.1) forwards !important;
-    -webkit-animation: proItem2 1s cubic-bezier(0.4, 0.05, 0.34, 1.1) forwards !important;
+  .custom-item .design-card {
+    overflow: hidden;
+    animation: none !important;
+    -webkit-animation: none !important;
+  }
+
+  .custom-item:hover a,
+  .custom-item:hover .design-card {
+    animation: none !important;
+    -webkit-animation: none !important;
+    box-shadow: var(--standard-shadow);
   }
 
   .is-touch .custom-list {
