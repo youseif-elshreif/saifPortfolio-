@@ -50,6 +50,9 @@
 }
 
 @keyframes proItem {
+  0% {
+    opacity: 0;
+  }
   100% {
     top: 0px;
     left: 0px;
@@ -233,7 +236,7 @@
 }
 
 @media (max-width: 1200px) {
-  .custom-item:nth-child(odd) {
+  .custom-list.reached-pro .custom-item:nth-child(odd) {
     animation: proItem 1s cubic-bezier(0.4, 0.05, 0.34, 1.1) forwards !important;
     -webkit-animation: proItem 1s cubic-bezier(0.4, 0.05, 0.34, 1.1) forwards !important;
     top: 0px;
@@ -246,7 +249,7 @@
     -o-transform: translateZ(0px);
   }
 
-  .custom-item:nth-child(even) {
+  .custom-list.reached-pro .custom-item:nth-child(even) {
     animation: proItem 1s cubic-bezier(0.4, 0.05, 0.34, 1.1) forwards !important;
     -webkit-animation: proItem 1s cubic-bezier(0.4, 0.05, 0.34, 1.1) forwards !important;
     top: 0px;
