@@ -23,11 +23,11 @@
   -moz-transform: translate(-50%, 0%);
   -ms-transform: translate(-50%, 0%);
   -o-transform: translate(-50%, 0%);
-  transition: all 0.5s ease !important;
-  -webkit-transition: all 0.5s ease !important;
-  -moz-transition: all 0.5s ease !important;
-  -ms-transition: all 0.5s ease !important;
-  -o-transition: all 0.5s ease !important;
+  transition: all 0.3s ease !important;
+  -webkit-transition: all 0.3s ease !important;
+  -moz-transition: all 0.3s ease !important;
+  -ms-transition: all 0.3s ease !important;
+  -o-transition: all 0.3s ease !important;
 }
 
 .stats-item:hover .counter {
@@ -70,11 +70,11 @@
 .stats-item .counter::before,
 .stats-item .counter::after {
   box-shadow: var(--standard-shadow);
-  transition: all 0.5s ease !important;
-  -webkit-transition: all 0.5s ease !important;
-  -moz-transition: all 0.5s ease !important;
-  -ms-transition: all 0.5s ease !important;
-  -o-transition: all 0.5s ease !important;
+  transition: all 0.3s ease !important;
+  -webkit-transition: all 0.3s ease !important;
+  -moz-transition: all 0.3s ease !important;
+  -ms-transition: all 0.3s ease !important;
+  -o-transition: all 0.3s ease !important;
 }
 
 .stats-item:hover .counter::before,
