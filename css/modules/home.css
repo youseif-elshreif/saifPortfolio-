@@ -402,18 +402,18 @@
   }
 
   .floating-badges .badge:nth-child(1) {
-    top: 10%;
-    right: -10px;
+    top: 25%;
+    right: -20px;
   }
 
   .floating-badges .badge:nth-child(2) {
-    top: 40%;
-    left: -10px;
+    top: 48%;
+    left: -20px;
   }
 
   .floating-badges .badge:nth-child(3) {
-    bottom: 15%;
-    right: 5%;
+    bottom: 5%;
+    right: 15%;
   }
 }
 /* end-home */
