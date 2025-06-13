@@ -45,33 +45,38 @@
   font-size: 38px;
   margin: 0 auto 60px;
   text-shadow: var(--text-shadow);
-  top: -20.8px;
+  top: -21.8px;
 }
 
 .header::before,
 .header::after {
   content: "";
   position: absolute;
-  width: 60px;
+  width: 60000px;
   height: 4px;
   background-color: rgb(var(--h1-color));
-  transform: translateY(-50%) scaleX(1000);
-  -webkit-transform: translateY(-50%) scaleX(1000);
-  -moz-transform: translateY(-50%) scaleX(1000);
-  -ms-transform: translateY(-50%) scaleX(1000);
-  -o-transform: translateY(-50%) scaleX(1000);
 }
 
 .header::before {
-  right: -70px;
+  right: -10px;
   top: 50%;
   transform-origin: left;
+  transform: translate(100%, -50%);
+  -webkit-transform: translate(100%, -50%);
+  -moz-transform: translate(100%, -50%);
+  -ms-transform: translate(100%, -50%);
+  -o-transform: translate(100%, -50%);
 }
 
 .header::after {
-  left: -70px;
+  left: -10px;
   top: 50%;
   transform-origin: right;
+  transform: translate(-100%, -50%);
+  -webkit-transform: translate(-100%, -50%);
+  -moz-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  -o-transform: translate(-100%, -50%);
 }
 
 /* custom header */
