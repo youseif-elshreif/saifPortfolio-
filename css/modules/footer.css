@@ -34,15 +34,9 @@ footer h4 {
   font-size: 18px;
 }
 
-footer ul {
-  list-style: ">";
-}
-
 footer ul li {
-  padding-left: 10px;
   font-size: 16px;
-  margin-left: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   width: fit-content;
 }
 
@@ -99,14 +93,5 @@ footer .footer-bottom {
 @media (max-width: 992px) {
   footer .container div {
     flex-basis: calc(50% - 20px);
-  }
-}
-@media (max-width: 432px) {
-  footer {
-    text-align: center;
-  }
-  footer li {
-    margin: 5px auto;
-    margin-left: auto !important;
   }
 }
