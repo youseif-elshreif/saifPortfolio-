@@ -1,6 +1,7 @@
 /* start-footer */
 
 footer {
+  border-top: 4px solid rgb(var(--h1-color));
   padding-top: 25px !important;
   padding-bottom: 25px !important;
 }
