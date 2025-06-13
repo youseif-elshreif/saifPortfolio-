@@ -96,7 +96,7 @@ footer .footer-bottom {
   }
 }
 @media (max-width: 766px) {
-  footer .container div {
-    padding: 40px 0 60px !important;
+  footer .footer-bottom {
+    padding: 0 55px;
   }
 }
