@@ -15,6 +15,8 @@ function openLightbox() {
 function closeLightbox() {
   lightbox.classList.remove("active");
   document.documentElement.style.overflow = "";
+  lightboxImage.src = "";
+  lightboxImage.alt = "";
 }
 
 function updateLightboxContent(images, index) {
